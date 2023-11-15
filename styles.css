@@ -4,6 +4,15 @@
     font-family: Arial, sans-serif;
 }
 
+.siteName {
+    font-size: 36px; 
+    font-weight: bold;
+    margin: 0;
+    color: #5ca6c3;
+    margin: auto;
+    text-align: center;
+}
+
 .question {
     margin-bottom: 20px;
 }
@@ -21,7 +30,8 @@
 }
 
 .answer:hover {
-    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(56, 53, 53, 0.8);
+    border: 1px solid rgba(56, 53, 53, 0, 0.8);
 }
 
 .correct-answer {
