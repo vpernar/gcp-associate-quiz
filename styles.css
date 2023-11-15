@@ -26,12 +26,13 @@
     padding: 10px;
     border: 1px solid #ccc;
     cursor: pointer;
-    transition: box-shadow 0.3s ease, border 0.3s ease; /* Added transition for a smooth effect */
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+    background-color: #fff; 
 }
 
 .answer:hover {
     box-shadow: 0 0 10px rgba(56, 53, 53, 0.8);
-    border: 1px solid rgba(56, 53, 53, 0.8); /* Match the alpha channel for consistency */
+    border: 1px solid rgba(56, 53, 53, 0.8); 
 }
 
 .correct-answer {
@@ -68,6 +69,7 @@ button:hover {
     border: 2px solid #3498db;
     border-radius: 10px;
     padding: 10px;
+    background-color: #eaf5fe;
 }
 
 .question {
