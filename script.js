@@ -2,66 +2,81 @@ const quizContainer = document.getElementById('quiz-container');
 const questionsPerPage = 10;
 let currentPage = 1;
 let questionsData;
+let questionContainers = [];
 
 fetch('./data.json')
     .then(response => response.json())
     .then(data => {
         questionsData = data;
-        startQuiz(questionsData);
+        createQuestionContainers(questionsData);
+        startQuiz();
     })
     .catch(error => console.error('Error fetching data:', error));
 
-function startQuiz(questions) {
+function createQuestionContainers(questions) {
     shuffleArray(questions);
-    displayQuestionsOnPage(questions, currentPage);
+
+    for (let i = 0; i < questions.length; i++) {
+        const questionContainer = document.createElement('div');
+        questionContainer.classList.add('question-container');
+        displayQuestion(questions[i], i + 1, questionContainer);
+        questionContainers.push(questionContainer);
+    }
+}
+
+function startQuiz() {
+    displayQuestionsOnPage(currentPage);
 
     const nextButton = createNavigationButton('Next Page', () => {
-        currentPage++;
-        displayQuestionsOnPage(questions, currentPage);
+        if (currentPage !== Math.ceil(questionContainers.length / questionsPerPage)) {
+            currentPage++;
+            displayQuestionsOnPage(currentPage);
+            scrollToTop();
+        }
     });
 
     const backButton = createNavigationButton('Back', () => {
         if (currentPage > 1) {
             currentPage--;
-            displayQuestionsOnPage(questions, currentPage);
+            displayQuestionsOnPage(currentPage);
+            scrollToTop();
         }
     });
 
+    const showAllButton = createNavigationButton('Show All Questions', () => {
+        showAllQuestions();
+    });
+
     const navigationContainer = document.getElementById('navigation-container');
+    navigationContainer.innerHTML = '';
+
     navigationContainer.appendChild(backButton);
+    navigationContainer.appendChild(showAllButton);
     navigationContainer.appendChild(nextButton);
 }
 
-function displayQuestionsOnPage(questions, page) {
+function displayQuestionsOnPage(page) {
     const startIndex = (page - 1) * questionsPerPage;
     let endIndex = startIndex + questionsPerPage;
 
-    if (endIndex > questions.length) {
-        endIndex = questions.length;
+    if (endIndex > questionContainers.length) {
+        endIndex = questionContainers.length;
     }
-
-    const questionsOnPage = questions.slice(startIndex, endIndex);
 
     quizContainer.innerHTML = '';
 
-    questionsOnPage.forEach((question, index) => {
-        const questionNumber = startIndex + index + 1;
-        displayQuestion(question, questionNumber);
-    });
+    for (let i = startIndex; i < endIndex; i++) {
+        quizContainer.appendChild(questionContainers[i]);
+    }
 }
 
-function displayQuestion(question, questionNumber) {
-    const questionContainer = document.createElement('div');
-    questionContainer.classList.add('question-container');
-
+function displayQuestion(question, questionNumber, container) {
     const questionDiv = document.createElement('div');
     questionDiv.classList.add('question');
 
     const questionText = document.createElement('p');
     questionText.textContent = questionNumber + '. ' + question.question;
     questionDiv.appendChild(questionText);
-
-    let selectedAnswer = null;
 
     if (question.image) {
         const image = document.createElement('img');
@@ -77,8 +92,7 @@ function displayQuestion(question, questionNumber) {
     answersList.addEventListener('click', (event) => {
         const clickedAnswer = event.target.closest('.answer');
         if (clickedAnswer) {
-            selectedAnswer = question.answers[clickedAnswer.dataset.index];
-            checkAnswer(selectedAnswer, questionNumber - 1);
+            checkAnswer(clickedAnswer, question);
         }
     });
 
@@ -91,29 +105,48 @@ function displayQuestion(question, questionNumber) {
         answersList.appendChild(answerItem);
     });
 
-    questionContainer.appendChild(questionDiv);
-    questionContainer.appendChild(answersList);
-    quizContainer.appendChild(questionContainer);
+    container.appendChild(questionDiv);
+    container.appendChild(answersList);
 }
 
+function checkAnswer(clickedAnswer, question) {
+    const container = clickedAnswer.closest('.question-container');
+    const answers = container.querySelectorAll('.answer');
 
-function checkAnswer(selectedAnswer, questionIndex) {
-    const startIndex = (currentPage - 1) * questionsPerPage;
-
-    const answers = document.querySelectorAll('.answer');
-
-    answers.forEach((item, index) => {
-        const questionNumber = startIndex + Math.floor(index / questionsData[questionIndex].answers.length);
-
-        if (questionNumber === questionIndex) {
-            const currentAnswer = questionsData[questionIndex].answers[index % questionsData[questionIndex].answers.length];
-
-            if (currentAnswer.isCorrect) {
-                item.classList.add('correct-answer');
+    answers.forEach(answerItem => {
+        if (answerItem === clickedAnswer) {
+            if (question.answers[clickedAnswer.dataset.index].isCorrect) {
+                answerItem.classList.add('correct-answer');
             } else {
-                item.classList.add('incorrect-answer');
+                answerItem.classList.add('incorrect-answer');
             }
+            answerItem.style.pointerEvents = 'none';
         }
+    });
+}
+
+function showAllQuestions() {
+    for (let i = 0; i < questionContainers.length; i++) {
+        const questionContainer = questionContainers[i];
+        const answers = questionContainer.querySelectorAll('.answer');
+
+        answers.forEach(answerItem => {
+            const isCorrect = questionsData[i].answers[answerItem.dataset.index].isCorrect;
+
+            if (isCorrect) {
+                answerItem.classList.add('correct-answer');
+            } else {
+                answerItem.classList.add('incorrect-answer');
+            }
+            answerItem.style.pointerEvents = 'none';
+        });
+    }
+}
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
     });
 }
 
@@ -125,8 +158,10 @@ function shuffleArray(array) {
 }
 
 function createNavigationButton(text, clickHandler) {
+    console.log("Creating button: " + text)
     const button = document.createElement('button');
     button.textContent = text;
+    button.id = text.toLowerCase().replace(/\s+/g, '-') + '-button';
     button.addEventListener('click', clickHandler);
     return button;
 }
