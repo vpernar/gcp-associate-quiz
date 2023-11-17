@@ -1,7 +1,6 @@
 const quizContainer = document.getElementById('quiz-container');
 const questionsPerPage = 10;
 let currentPage = 1;
-
 let questionsData;
 
 fetch('./data.json')
@@ -100,7 +99,6 @@ function displayQuestion(question, questionNumber) {
 
 function checkAnswer(selectedAnswer, questionIndex) {
     const startIndex = (currentPage - 1) * questionsPerPage;
-    const endIndex = startIndex + questionsPerPage;
 
     const answers = document.querySelectorAll('.answer');
 
@@ -114,14 +112,6 @@ function checkAnswer(selectedAnswer, questionIndex) {
                 item.classList.add('correct-answer');
             } else {
                 item.classList.add('incorrect-answer');
-            }
-
-            if (currentAnswer.text === selectedAnswer.text) {
-                if (currentAnswer.isCorrect) {
-                    item.classList.add('selected-correct-answer');
-                } else {
-                    item.classList.add('selected-incorrect-answer');
-                }
             }
         }
     });
