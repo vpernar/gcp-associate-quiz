@@ -1291,862 +1291,863 @@ function getData() {
             ]
         },
         {
-            "question": "",
+            "question": "You need to reduce GCP service costs for a division of your company using the fewest possible steps. You need to turn off all configured services in an existing GCP project. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "1. Verify that you are assigned the Project Owners IAM role for this project. 2. Locate the project in the GCP console, click Shut down and then enter the project ID.", "isCorrect": true },
+                { "text": "1. Verify that you are assigned the Project Owners IAM role for this project. 2. Switch to the project in the GCP console, locate the resources and delete them.", "isCorrect": false },
+                { "text": "1. Verify that you are assigned the Organizational Administrator IAM role for this project. 2. Locate the project in the GCP console, enter the project ID and then click Shut down.", "isCorrect": false },
+                { "text": "1. Verify that you are assigned the Organizational Administrators IAM role for this project. 2. Switch to the project in the GCP console, locate the resources and delete them.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You are configuring service accounts for an application that spans multiple projects. Virtual machines (VMs) running in the web-applications project need access to BigQuery datasets in crm-databases-proj. You want to follow Google-recommended practices to give access to the service account in the web-applications project. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Give bigquery.dataViewer role to crm-databases-proj and appropriate roles to web-applications.", "isCorrect": true },
+                { "text": "Give ג€project ownerג€ role to crm-databases-proj and bigquery.dataViewer role to web-applications.", "isCorrect": false },
+                { "text": "Give ג€project ownerג€ role to crm-databases-proj and the web-applications project.", "isCorrect": false },
+                { "text": "Give ג€project ownerג€ for web-applications appropriate roles to crm-databases-proj.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "An employee was terminated, but their access to Google Cloud Platform (GCP) was not removed until 2 weeks later. You need to find out this employee accessed any sensitive customer information after their termination. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "View Data Access audit logs in Stackdriver. Search for the user's email as the principal.", "isCorrect": true },
+                { "text": "View System Event Logs in Stackdriver. Search for the user's email as the principal.", "isCorrect": false },
+                { "text": "View System Event Logs in Stackdriver. Search for the service account associated with the user.", "isCorrect": false },
+                { "text": "View the Admin Activity log in Stackdriver. Search for the service account associated with the user.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You need to create a custom IAM role for use with a GCP service. All permissions in the role must be suitable for production use. You also want to clearly share with your organization the status of the custom role. This will be the first version of the custom role. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Use permissions in your role that use the 'supported' support level for role permissions. Set the role stage to ALPHA while testing the role permissions.", "isCorrect": true },
+                { "text": "Use permissions in your role that use the 'supported' support level for role permissions. Set the role stage to BETA while testing the role permissions.", "isCorrect": false },
+                { "text": "Use permissions in your role that use the 'testing' support level for role permissions. Set the role stage to ALPHA while testing the role permissions.", "isCorrect": false },
+                { "text": "Use permissions in your role that use the 'testing' support level for role permissions. Set the role stage to BETA while testing the role permissions.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "Your company has a large quantity of unstructured data in different file formats. You want to perform ETL transformations on the data. You need to make the data accessible on Google Cloud so it can be processed by a Dataflow job. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Upload the data to Cloud Storage using the gsutil command line tool.", "isCorrect": true },
+                { "text": "Upload the data to BigQuery using the bq command line tool.", "isCorrect": false },
+                { "text": "Upload the data into Cloud SQL using the import function in the console.", "isCorrect": false },
+                { "text": "Upload the data into Cloud Spanner using the import function in the console.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You need to manage multiple Google Cloud projects in the fewest steps possible. You want to configure the Google Cloud SDK command line interface (CLI) so that you can easily manage multiple projects. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "1. Create a configuration for each project you need to manage. 2. Activate the appropriate configuration when you work with each of your assigned Google Cloud projects.", "isCorrect": true },
+                { "text": "1. Create a configuration for each project you need to manage. 2. Use gcloud init to update the configuration values when you need to work with a non-default project", "isCorrect": false },
+                { "text": "1. Use the default configuration for one project you need to manage. 2. Activate the appropriate configuration when you work with each of your assigned Google Cloud projects.", "isCorrect": false },
+                { "text": "1. Use the default configuration for one project you need to manage. 2. Use gcloud init to update the configuration values when you need to work with a non-default project.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "Your managed instance group raised an alert stating that new instance creation has failed to create new instances. You need to maintain the number of running instances specified by the template to be able to process expected application traffic. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Create an instance template that contains valid syntax which will be used by the instance group. Delete any persistent disks with the same name as instance names.", "isCorrect": true },
+                { "text": "Create an instance template that contains valid syntax that will be used by the instance group. Verify that the instance name and persistent disk name values are not the same in the template.", "isCorrect": false },
+                { "text": "Verify that the instance template being used by the instance group contains valid syntax. Delete any persistent disks with the same name as instance names. Set the disks.autoDelete property to true in the instance template.", "isCorrect": false },
+                { "text": "Delete the current instance template and replace it with a new instance template. Verify that the instance name and persistent disk name values are not the same in the template. Set the disks.autoDelete property to true in the instance template.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "Your company is moving from an on-premises environment to Google Cloud. You have multiple development teams that use Cassandra environments as backend databases. They all need a development environment that is isolated from other Cassandra instances. You want to move to Google Cloud quickly and with minimal support effort. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "1. Advise your developers to go to Cloud Marketplace. 2. Ask the developers to launch a Cassandra image for their development work.", "isCorrect": true },
+                { "text": "1. Build an instruction guide to install Cassandra on Google Cloud. 2. Make the instruction guide accessible to your developers.", "isCorrect": false },
+                { "text": "1. Build a Cassandra Compute Engine instance and take a snapshot of it. 2. Use the snapshot to create instances for your developers.", "isCorrect": false },
+                { "text": "1. Build a Cassandra Compute Engine instance and take a snapshot of it. 2. Upload the snapshot to Cloud Storage and make it accessible to your developers. 3. Build instructions to create a Compute Engine instance from the snapshot so that developers can do it themselves.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You have a Compute Engine instance hosting a production application. You want to receive an email if the instance consumes more than 90% of its CPU resources for more than 15 minutes. You want to use Google services. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "1. Create a Stackdriver Workspace, and associate your Google Cloud Platform (GCP) project with it. 2. Create an Alerting Policy in Stackdriver that uses the threshold as a trigger condition. 3. Configure your email address in the notification channel.", "isCorrect": true },
+                { "text": "1. Create a consumer Gmail account. 2. Write a script that monitors the CPU usage. 3. When the CPU usage exceeds the threshold, have that script send an email using the Gmail account and smtp.gmail.com on port 25 as SMTP server.", "isCorrect": false },
+                { "text": "1. Create a Stackdriver Workspace, and associate your GCP project with it. 2. Write a script that monitors the CPU usage and sends it as a custom metric to Stackdriver. 3. Create an uptime check for the instance in Stackdriver.", "isCorrect": false },
+                { "text": "1. In Stackdriver Logging, create a logs-based metric to extract the CPU usage by using this regular expression: CPU Usage: ([0-9] {1,3})% 2. In Stackdriver Monitoring, create an Alerting Policy based on this metric. 3. Configure your email address in the notification channel.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You have an application that uses Cloud Spanner as a backend database. The application has a very predictable traffic pattern. You want to automatically scale up or down the number of Spanner nodes depending on traffic. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Create a Cloud Monitoring alerting policy to send an alert to webhook when Cloud Spanner CPU is over or under your threshold. Create a Cloud Function that listens to HTTP and resizes Spanner resources accordingly.", "isCorrect": true },
+                { "text": "Create a Cloud Monitoring alerting policy to send an alert to Google Cloud Support email when Cloud Spanner CPU exceeds your threshold. Google support would scale resources up or down accordingly.", "isCorrect": false },
+                { "text": "Create a Cloud Monitoring alerting policy to send an alert to oncall SRE emails when Cloud Spanner CPU exceeds the threshold. SREs would scale resources up or down accordingly.", "isCorrect": false },
+                { "text": "Create a cron job that runs on a scheduled basis to review Cloud Monitoring metrics, and then resize the Spanner instance accordingly.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "Your company publishes large files on an Apache web server that runs on a Compute Engine instance. The Apache web server is not the only application running in the project. You want to receive an email when the egress network costs for the server exceed 100 dollars for the current month as measured by Google Cloud. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Export the billing data to BigQuery. Create a Cloud Function that uses BigQuery to sum the egress network costs of the exported billing data for the Apache web server for the current month and sends an email if it is over 100 dollars. Schedule the Cloud Function using Cloud Scheduler to run hourly.", "isCorrect": true },
+                { "text": "Set up a budget alert on the billing account with an amount of 100 dollars, a threshold of 100%, and notification type of ג€email.ג€", "isCorrect": false },
+                { "text": "Set up a budget alert on the project with an amount of 100 dollars, a threshold of 100%, and notification type of ג€email.ג€", "isCorrect": false },
+                { "text": "Use the Cloud Logging Agent to export the Apache web server logs to Cloud Logging. Create a Cloud Function that uses BigQuery to parse the HTTP response log data in Cloud Logging for the current month and sends an email if the size of all HTTP responses, multiplied by current Google Cloud egress prices, totals over 100 dollars. Schedule the Cloud Function using Cloud Scheduler to run hourly.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You have designed a solution on Google Cloud that uses multiple Google Cloud products. Your company has asked you to estimate the costs of the solution. You need to provide estimates for the monthly total cost. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "For each Google Cloud product in the solution, review the pricing details on the products pricing page. Use the pricing calculator to total the monthly costs for each Google Cloud product.", "isCorrect": true },
+                { "text": "For each Google Cloud product in the solution, review the pricing details on the products pricing page. Create a Google Sheet that summarizes the expected monthly costs for each product.", "isCorrect": false },
+                { "text": "Provision the solution on Google Cloud. Leave the solution provisioned for 1 week. Navigate to the Billing Report page in the Cloud Console. Multiply the 1 week cost to determine the monthly costs.", "isCorrect": false },
+                { "text": "Provision the solution on Google Cloud. Leave the solution provisioned for 1 week. Use Cloud Monitoring to determine the provisioned and used resource amounts. Multiply the 1 week cost to determine the monthly costs.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You have an application that receives SSL-encrypted TCP traffic on port 443. Clients for this application are located all over the world. You want to minimize latency for the clients. Which load balancing option should you use?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "SSL Proxy Load Balancer", "isCorrect": true },
+                { "text": "Network Load Balancer", "isCorrect": false },
+                { "text": "HTTPS Load Balancer", "isCorrect": false },
+                { "text": "Internal TCP/UDP Load Balancer. Add a firewall rule allowing ingress traffic from 0.0.0.0/0 on the target instances.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You have an application on a general-purpose Compute Engine instance that is experiencing excessive disk read throttling on its Zonal SSD Persistent Disk. The application primarily reads large files from disk. The disk size is currently 350 GB. You want to provide the maximum amount of throughput while minimizing costs. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Migrate to use a Local SSD on the instance.", "isCorrect": true },
+                { "text": "Increase the allocated CPU to the instance.", "isCorrect": false },
+                { "text": "Increase the size of the disk to 1 TB.", "isCorrect": false },
+                { "text": "Migrate to use a Regional SSD on the instance.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "Your Dataproc cluster runs in a single Virtual Private Cloud (VPC) network in a single subnet with range 172.16.20.128/25. There are no private IP addresses available in the VPC network. You want to add new VMs to communicate with your cluster using the minimum number of steps. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Create a new VPC network for the VMs. Enable VPC Peering between the VMs' VPC network and the Dataproc cluster VPC network.", "isCorrect": true },
+                { "text": "Modify the existing subnet range to 172.16.20.0/24.", "isCorrect": false },
+                { "text": "Create a new Secondary IP Range in the VPC and configure the VMs to use that range.", "isCorrect": false },
+                { "text": "Create a new VPC network for the VMs with a subnet of 172.32.0.0/16. Enable VPC network Peering between the Dataproc VPC network and the VMs VPC network. Configure a custom Route exchange.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You manage an App Engine Service that aggregates and visualizes data from BigQuery. The application is deployed with the default App Engine Service account. The data that needs to be visualized resides in a different project managed by another team. You do not have access to this project, but you want your application to be able to read data from the BigQuery dataset. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Ask the other team to grant your default App Engine Service account the role of BigQuery Job User.", "isCorrect": true },
+                { "text": "Ask the other team to grant your default App Engine Service account the role of BigQuery Data Viewer.", "isCorrect": false },
+                { "text": "In Cloud IAM of your project, ensure that the default App Engine service account has the role of BigQuery Data Viewer.", "isCorrect": false },
+                { "text": "In Cloud IAM of your project, grant a newly created service account from the other team the role of BigQuery Job User in your project.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You need to create a copy of a custom Compute Engine virtual machine (VM) to facilitate an expected increase in application traffic due to a business acquisition. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Create a Compute Engine snapshot of your base VM. Create your images from that snapshot.", "isCorrect": false },
+                { "text": "Create a Compute Engine snapshot of your base VM. Create your instances from that snapshot.", "isCorrect": false },
+                { "text": "Create a custom Compute Engine image from a snapshot. Create your images from that image.", "isCorrect": false },
+                { "text": "Create a custom Compute Engine image from a snapshot. Create your instances from that image.", "isCorrect": true }
 
             ]
         },
         {
-            "question": "",
+            "question": "You have deployed an application on a single Compute Engine instance. The application writes logs to disk. Users start reporting errors with the application. You want to diagnose the problem. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Install and configure the Cloud Logging Agent and view the logs from Cloud Logging.", "isCorrect": true },
+                { "text": "Configure a Health Check on the instance and set a Low Healthy Threshold value.", "isCorrect": false },
+                { "text": "Connect to the instance's serial console and read the application logs.", "isCorrect": false },
+                { "text": "Navigate to Cloud Logging and view the application logs.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "An application generates daily reports in a Compute Engine virtual machine (VM). The VM is in the project corp-iot-insights. Your team operates only in the project corp-aggregate-reports and needs a copy of the daily exports in the bucket corp-aggregate-reports-storage. You want to configure access so that the daily reports from the VM are available in the bucket corp-aggregate-reports-storage and use as few steps as possible while following Google-recommended practices. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Grant the VM Service Account the role Storage Object Creator on corp-aggregate-reports-storage.", "isCorrect": true },
+                { "text": "Move both projects under the same folder.", "isCorrect": false },
+                { "text": "Create a Shared VPC network between both projects. Grant the VM Service Account the role Storage Object Creator on corp-iot-insights.", "isCorrect": false },
+                { "text": "Make corp-aggregate-reports-storage public and create a folder with a pseudo-randomized suffix name. Share the folder with the IoT team.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You built an application on your development laptop that uses Google Cloud services. Your application uses Application Default Credentials for authentication and works fine on your development laptop. You want to migrate this application to a Compute Engine virtual machine (VM) and set up authentication using Google- recommended practices and minimal changes. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Assign appropriate access for Google services to the service account used by the Compute Engine VM.", "isCorrect": true },
+                { "text": "Create a service account with appropriate access for Google services, and configure the application to use this account.", "isCorrect": false },
+                { "text": "Store credentials for service accounts with appropriate access for Google services in a config file, and deploy this config file with your application.", "isCorrect": false },
+                { "text": "Store credentials for your user account with appropriate access for Google services in a config file, and deploy this config file with your application.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You need to create a Compute Engine instance in a new project that doesn't exist yet. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Using the Cloud SDK, create a new project, enable the Compute Engine API in that project, and then create the instance specifying your new project.", "isCorrect": true },
+                { "text": "Enable the Compute Engine API in the Cloud Console, use the Cloud SDK to create the instance, and then use the --project flag to specify a new project.", "isCorrect": false },
+                { "text": "Using the Cloud SDK, create the new instance, and use the --project flag to specify the new project. Answer yes when prompted by Cloud SDK to enable the Compute Engine API.", "isCorrect": false },
+                { "text": "Enable the Compute Engine API in the Cloud Console. Go to the Compute Engine section of the Console to create a new instance, and look for the Create In A New Project option in the creation form.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "Your company runs one batch process in an on-premises server that takes around 30 hours to complete. The task runs monthly, can be performed offline, and must be restarted if interrupted. You want to migrate this workload to the cloud while minimizing cost. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Migrate the workload to a Compute Engine VM. Start and stop the instance as needed.", "isCorrect": true },
+                { "text": "Migrate the workload to a Compute Engine Preemptible VM.", "isCorrect": false },
+                { "text": "Migrate the workload to a Google Kubernetes Engine cluster with Preemptible nodes.", "isCorrect": false },
+                { "text": "Create an Instance Template with Preemptible VMs On. Create a Managed Instance Group from the template and adjust Target CPU Utilization. Migrate the workload.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You are developing a new application and are looking for a Jenkins installation to build and deploy your source code. You want to automate the installation as quickly and easily as possible. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Deploy Jenkins through the Google Cloud Marketplace.", "isCorrect": true },
+                { "text": "Create a new Compute Engine instance. Run the Jenkins executable.", "isCorrect": false },
+                { "text": "Create a new Kubernetes Engine cluster. Create a deployment for the Jenkins image.", "isCorrect": false },
+                { "text": "Create an instance template with the Jenkins executable. Create a managed instance group with this template.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You have downloaded and installed the gcloud command line interface (CLI) and have authenticated with your Google Account. Most of your Compute Engine instances in your project run in the europe-west1-d zone. You want to avoid having to specify this zone with each CLI command when managing these instances. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Set the europe-west1-d zone as the default zone using the gcloud config subcommand.", "isCorrect": true },
+                { "text": "In the Settings page for Compute Engine under Default location, set the zone to europeג€\"west1-d.", "isCorrect": false },
+                { "text": "In the CLI installation directory, create a file called default.conf containing zone=europeג€\"west1ג€\"d.", "isCorrect": false },
+                { "text": "Create a Metadata entry on the Compute Engine page with key compute/zone and value europeג€\"west1ג€\"d.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "The core business of your company is to rent out construction equipment at large scale. All the equipment that is being rented out has been equipped with multiple sensors that send event information every few seconds. These signals can vary from engine status, distance traveled, fuel level, and more. Customers are billed based on the consumption monitored by these sensors. You expect high throughput \`\" up to thousands of events per hour per device \`\" and need to retrieve consistent data based on the time of the event. Storing and retrieving individual signals should be atomic. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Ingest the data into Cloud Bigtable. Create a row key based on the event timestamp.", "isCorrect": true },
+                { "text": "Ingest the data into Datastore. Store data in an entity group based on the device.", "isCorrect": false },
+                { "text": "Create a file in Cloud Filestore per device and append new data to that file.", "isCorrect": false },
+                { "text": "Create a file in Cloud Storage per device and append new data to that file.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You are asked to set up application performance monitoring on Google Cloud projects A, B, and C as a single pane of glass. You want to monitor CPU, memory, and disk. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Enable API, create a workspace under project A, and then add projects B and C.", "isCorrect": true },
+                { "text": "Enable API and then use default dashboards to view all projects in sequence.", "isCorrect": false },
+                { "text": "Enable API and then give the metrics.reader role to projects A, B, and C.", "isCorrect": false },
+                { "text": "Enable API and then share charts from project A, B, and C.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You created several resources in multiple Google Cloud projects. All projects are linked to different billing accounts. To better estimate future charges, you want to have a single visual representation of all costs incurred. You want to include new cost data as soon as possible. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Configure Billing Data Export to BigQuery and visualize the data in Data Studio.", "isCorrect": true },
+                { "text": "Visit the Cost Table page to get a CSV export and visualize it using Data Studio.", "isCorrect": false },
+                { "text": "Fill all resources in the Pricing Calculator to get an estimate of the monthly cost.", "isCorrect": false },
+                { "text": "Use the Reports view in the Cloud Billing Console to view the desired cost information.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "Your company has workloads running on Compute Engine and on-premises. The Google Cloud Virtual Private Cloud (VPC) is connected to your WAN over a Virtual Private Network (VPN). You need to deploy a new Compute Engine instance and ensure that no public Internet traffic can be routed to it. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Create the instance without a public IP address.", "isCorrect": true },
+                { "text": "Create the instance with Private Google Access enabled.", "isCorrect": false },
+                { "text": "Create a deny-all egress firewall rule on the VPC network.", "isCorrect": false },
+                { "text": "Create a route on the VPC to route all traffic to the instance over the VPN tunnel.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "Your team maintains the infrastructure for your organization. The current infrastructure requires changes. You need to share your proposed changes with the rest of the team. You want to follow Google's recommended best practices. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Use Deployment Manager templates to describe the proposed changes and store them in a Cloud Storage bucket.", "isCorrect": false },
+                { "text": "Use Deployment Manager templates to describe the proposed changes and store them in Cloud Source Repositories.", "isCorrect": true },
+                { "text": "Apply the changes in a development environment, run gcloud compute instances list, and then save the output in a shared Storage bucket.", "isCorrect": false },
+                { "text": "Apply the changes in a development environment, run gcloud compute instances list, and then save the output in Cloud Source Repositories.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You have a Compute Engine instance hosting an application used between 9 AM and 6 PM on weekdays. You want to back up this instance daily for disaster recovery purposes. You want to keep the backups for 30 days. You want the Google-recommended solution with the least management overhead and the least number of services. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "1. In the Cloud Console, go to the Compute Engine Disks page and select your instance's disk. 2. In the Snapshot Schedule section, select Create Schedule and configure the following parameters: - Schedule frequency: Daily - Start time: 1:00 AM ג€\" 2:00 AM - Autodelete snapshots after: 30 days", "isCorrect": true },
+                { "text": "1. Update your instances' metadata to add the following value: snapshotג€\"schedule: 0 1 * * * 2. Update your instances' metadata to add the following value: snapshotג€\"retention: 30", "isCorrect": false },
+                { "text": "1. Create a Cloud Function that creates a snapshot of your instance's disk. 2. Create a Cloud Function that deletes snapshots that are older than 30 days. 3. Use Cloud Scheduler to trigger both Cloud Functions daily at 1:00 AM.", "isCorrect": false },
+                { "text": "1. Create a bash script in the instance that copies the content of the disk to Cloud Storage. 2. Create a bash script in the instance that deletes data older than 30 days in the backup Cloud Storage bucket. 3. Configure the instance's crontab to execute these scripts daily at 1:00 AM.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "Your existing application running in Google Kubernetes Engine (GKE) consists of multiple pods running on four GKE n1\`\"standard\`\"2 nodes. You need to deploy additional pods requiring n2\`\"highmem\`\"16 nodes without any downtime. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Create a new Node Pool and specify machine type n2ג€\"highmemג€\"16. Deploy the new pods.", "isCorrect": true },
+                { "text": "Use gcloud container clusters upgrade. Deploy the new services.", "isCorrect": false },
+                { "text": "Create a new cluster with n2ג€\"highmemג€\"16 nodes. Redeploy the pods and delete the old cluster.", "isCorrect": false },
+                { "text": "Create a new cluster with both n1ג€\"standardג€\"2 and n2ג€\"highmemג€\"16 nodes. Redeploy the pods and delete the old cluster.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You have an application that uses Cloud Spanner as a database backend to keep current state information about users. Cloud Bigtable logs all events triggered by users. You export Cloud Spanner data to Cloud Storage during daily backups. One of your analysts asks you to join data from Cloud Spanner and Cloud Bigtable for specific users. You want to complete this ad hoc request as efficiently as possible. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Create two separate BigQuery external tables on Cloud Storage and Cloud Bigtable. Use the BigQuery console to join these tables through user fields, and apply appropriate filters.", "isCorrect": true },
+                { "text": "Create a Cloud Dataproc cluster that runs a Spark job to extract data from Cloud Bigtable and Cloud Storage for specific users.", "isCorrect": false },
+                { "text": "Create a dataflow job that copies data from Cloud Bigtable and Cloud Spanner for specific users.", "isCorrect": false },
+                { "text": "Create a dataflow job that copies data from Cloud Bigtable and Cloud Storage for specific users.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You are hosting an application from Compute Engine virtual machines (VMs) in us\`\"central1\`\"a. You want to adjust your design to support the failure of a single Compute Engine zone, eliminate downtime, and minimize cost. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "ג€\" Create Compute Engine resources in usג€\"central1ג€\"b. ג€\" Balance the load across both usג€\"central1ג€\"a and usג€\"central1ג€\"b.", "isCorrect": true },
+                { "text": "ג€\" Create a Managed Instance Group and specify usג€\"central1ג€\"a as the zone. ג€\" Configure the Health Check with a short Health Interval.", "isCorrect": false },
+                { "text": "ג€\" Create an HTTP(S) Load Balancer. ג€\" Create one or more global forwarding rules to direct traffic to your VMs.", "isCorrect": false },
+                { "text": "ג€\" Perform regular backups of your application. ג€\" Create a Cloud Monitoring Alert and be notified if your application becomes unavailable. ג€\" Restore from backups when notified.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "A colleague handed over a Google Cloud Platform project for you to maintain. As part of a security checkup, you want to review who has been granted the Project Owner role. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Use the command gcloud projects getג€"iamג€"policy to view the current role assignments.", "isCorrect": true },
+                { "text": "Enable Audit Logs on the IAM & admin page for all resources, and validate the results.", "isCorrect": false },
+                { "text": "Navigate to Identity-Aware Proxy and check the permissions for these resources.", "isCorrect": false },
+                { "text": "In the console, validate which SSH keys have been stored as project-wide keys.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You are running multiple VPC-native Google Kubernetes Engine clusters in the same subnet. The IPs available for the nodes are exhausted, and you want to ensure that the clusters can grow in nodes when needed. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Expand the CIDR range of the relevant subnet for the cluster.", "isCorrect": true },
+                { "text": "Create a new subnet in the same region as the subnet being used.", "isCorrect": false },
+                { "text": "Add an alias IP range to the subnet used by the GKE clusters.", "isCorrect": false },
+                { "text": "Create a new VPC, and set up VPC peering with the existing VPC.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You have a batch workload that runs every night and uses a large number of virtual machines (VMs). It is fault-tolerant and can tolerate some of the VMs being terminated. The current cost of VMs is too high. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Run a test using simulated maintenance events. If the test is successful, use preemptible N1 Standard VMs when running future jobs.", "isCorrect": true },
+                { "text": "Run a test using simulated maintenance events. If the test is successful, use N1 Standard VMs when running future jobs.", "isCorrect": false },
+                { "text": "Run a test using a managed instance group. If the test is successful, use N1 Standard VMs in the managed instance group when running future jobs.", "isCorrect": false },
+                { "text": "Run a test using N1 standard VMs instead of N2. If the test is successful, use N1 Standard VMs when running future jobs.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You are working with a user to set up an application in a new VPC behind a firewall. The user is concerned about data egress. You want to configure the fewest open egress ports. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Set up a low-priority (65534) rule that blocks all egress and a high-priority rule (1000) that allows only the appropriate ports.", "isCorrect": true },
+                { "text": "Set up a high-priority (1000) rule that pairs both ingress and egress ports.", "isCorrect": false },
+                { "text": "Set up a high-priority (1000) rule that blocks all egress and a low-priority (65534) rule that allows only the appropriate ports.", "isCorrect": false },
+                { "text": "Set up a high-priority (1000) rule to allow the appropriate ports", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "Your company runs its Linux workloads on Compute Engine instances. Your company will be working with a new operations partner that does not use Google Accounts. You need to grant access to the instances to your operations partner so they can maintain the installed tooling. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Enable Cloud IAP for the Compute Engine instances, and add the operations partner as a Cloud IAP Tunnel User.", "isCorrect": true },
+                { "text": "Tag all the instances with the same network tag. Create a firewall rule in the VPC to grant TCP access on port 22 for traffic from the operations partner to instances with the network tag.", "isCorrect": false },
+                { "text": "Set up Cloud VPN between your Google Cloud VPC and the internal network of the operations partner.", "isCorrect": false },
+                { "text": "Ask the operations partner to generate SSH key pairs, and add the public keys to the VM instances.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You have created a code snippet that should be triggered whenever a new file is uploaded to a Cloud Storage bucket. You want to deploy this code snippet. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Use Cloud Functions and configure the bucket as a trigger resource.", "isCorrect": true },
+                { "text": "Use App Engine and configure Cloud Scheduler to trigger the application using Pub/Sub.", "isCorrect": false },
+                { "text": "Use Google Kubernetes Engine and configure a CronJob to trigger the application using Pub/Sub.", "isCorrect": false },
+                { "text": "Use Dataflow as a batch job, and configure the bucket as a data source.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You have been asked to set up Object Lifecycle Management for objects stored in storage buckets. The objects are written once and accessed frequently for 30 days. After 30 days, the objects are not read again unless there is a special need. The objects should be kept for three years, and you need to minimize cost. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Set up a policy that uses Standard storage for 30 days and then moves to Archive storage for three years.", "isCorrect": true },
+                { "text": "Set up a policy that uses Nearline storage for 30 days and then moves to Archive storage for three years.", "isCorrect": false },
+                { "text": "Set up a policy that uses Nearline storage for 30 days, then moves the Coldline for one year, and then moves to Archive storage for two years.", "isCorrect": false },
+                { "text": "Set up a policy that uses Standard storage for 30 days, then moves to Coldline for one year, and then moves to Archive storage for two years.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You are storing sensitive information in a Cloud Storage bucket. For legal reasons, you need to be able to record all requests that read any of the stored data. You want to make sure you comply with these requirements. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Enable Data Access audit logs for the Cloud Storage API.", "isCorrect": true },
+                { "text": "Enable the Identity Aware Proxy API on the project.", "isCorrect": false },
+                { "text": "Scan the bucket using the Data Loss Prevention API.", "isCorrect": false },
+                { "text": "Allow only a single Service Account access to read the data.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You are the team lead of a group of 10 developers. You provided each developer with an individual Google Cloud Project that they can use as their personal sandbox to experiment with different Google Cloud solutions. You want to be notified if any of the developers are spending above $500 per month on their sandbox environment. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Create a budget per project and configure budget alerts on all of these budgets.", "isCorrect": true },
+                { "text": "Create a single budget for all projects and configure budget alerts on this budget.", "isCorrect": false },
+                { "text": "Create a separate billing account per sandbox project and enable BigQuery billing exports. Create a Data Studio dashboard to plot the spending per billing account.", "isCorrect": false },
+                { "text": "Create a single billing account for all sandbox projects and enable BigQuery billing exports. Create a Data Studio dashboard to plot the spending per project.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You are deploying a production application on Compute Engine. You want to prevent anyone from accidentally destroying the instance by clicking the wrong button. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Enable delete protection on the instance.", "isCorrect": true },
+                { "text": "Disable the flag ג€Delete boot disk when instance is deleted.ג€", "isCorrect": false },
+                { "text": "Disable Automatic restart on the instance.", "isCorrect": false },
+                { "text": "Enable Preemptibility on the instance.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "Your company uses a large number of Google Cloud services centralized in a single project. All teams have specific projects for testing and development. The DevOps team needs access to all of the production services in order to perform their job. You want to prevent Google Cloud product changes from broadening their permissions in the future. You want to follow Google-recommended practices. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Create a custom role that combines the required permissions. Grant the DevOps team the custom role on the production project.", "isCorrect": true },
+                { "text": "Grant all members of the DevOps team the role of Project Editor on the production project.", "isCorrect": false },
+                { "text": "Grant all members of the DevOps team the role of Project Editor on the organization level.", "isCorrect": false },
+                { "text": "Create a custom role that combines the required permissions. Grant the DevOps team the custom role on the organization level.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You are building an application that processes data files uploaded from thousands of suppliers. Your primary goals for the application are data security and the expiration of aged data. You need to design the application to:\n* Restrict access so that suppliers can access only their own data.\n* Give suppliers write access to data only for 30 minutes.\n* Delete data that is over 45 days old.\nYou have a very short development cycle, and you need to make sure that the application requires minimal maintenance. Which two strategies should you use?\n(Choose two.)",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Build a lifecycle policy to delete Cloud Storage objects after 45 days.", "isCorrect": true },
+                { "text": "Use signed URLs to allow suppliers limited time access to store their objects.", "isCorrect": true },
+                { "text": "Set up an SFTP server for your application, and create a separate user for each supplier.", "isCorrect": false },
+                { "text": "Build a Cloud function that triggers a timer of 45 days to delete objects that have expired.", "isCorrect": false },
+                { "text": "Develop a script that loops through all Cloud Storage buckets and deletes any buckets that are older than 45 days.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "Your company wants to standardize the creation and management of multiple Google Cloud resources using Infrastructure as Code. You want to minimize the amount of repetitive code needed to manage the environment. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Develop templates for the environment using Cloud Deployment Manager.", "isCorrect": true },
+                { "text": "Use curl in a terminal to send a REST request to the relevant Google API for each individual resource.", "isCorrect": false },
+                { "text": "Use the Cloud Console interface to provision and manage all related resources.", "isCorrect": false },
+                { "text": "Create a bash script that contains all requirement steps as gcloud commands.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You are performing a monthly security check of your Google Cloud environment and want to know who has access to view data stored in your Google Cloud Project. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Review the IAM permissions for any role that allows for data access.", "isCorrect": true },
+                { "text": "Enable Audit Logs for all APIs that are related to data storage.", "isCorrect": false },
+                { "text": "Review the Identity-Aware Proxy settings for each resource.", "isCorrect": false },
+                { "text": "Create a Data Loss Prevention job.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "Your company has embraced a hybrid cloud strategy where some of the applications are deployed on Google Cloud. A Virtual Private Network (VPN) tunnel connects your Virtual Private Cloud (VPC) in Google Cloud with your company's on-premises network. Multiple applications in Google Cloud need to connect to an on-premises database server, and you want to avoid having to change the IP configuration in all of your applications when the IP of the database changes. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Create a private zone on Cloud DNS, and configure the applications with the DNS name.", "isCorrect": true },
+                { "text": "Configure Cloud NAT for all subnets of your VPC to be used when egressing from the VM instances.", "isCorrect": false },
+                { "text": "Configure the IP of the database as custom metadata for each instance, and query the metadata server.", "isCorrect": false },
+                { "text": "Query the Compute Engine internal DNS from the applications to retrieve the IP of the database.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You have developed a containerized web application that will serve internal colleagues during business hours. You want to ensure that no costs are incurred outside of the hours the application is used. You have just created a new Google Cloud project and want to deploy the application. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Deploy the container on Cloud Run (fully managed), and set the minimum number of instances to zero.", "isCorrect": true },
+                { "text": "Deploy the container on Cloud Run for Anthos, and set the minimum number of instances to zero.", "isCorrect": false },
+                { "text": "Deploy the container on App Engine flexible environment with autoscaling, and set the value min_instances to zero in the app.yaml.", "isCorrect": false },
+                { "text": "Deploy the container on App Engine flexible environment with manual scaling, and set the value instances to zero in the app.yaml.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You have experimented with Google Cloud using your own credit card and expensed the costs to your company. Your company wants to streamline the billing process and charge the costs of your projects to their monthly invoice. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Change the billing account of your projects to the billing account of your company.", "isCorrect": true },
+                { "text": "Create a ticket with Google Billing Support to ask them to send the invoice to your company.", "isCorrect": false },
+                { "text": "Set up BigQuery billing export and grant your financial department IAM access to query the data.", "isCorrect": false },
+                { "text": "Grant the financial team the IAM role of ג€Billing Account Userג€ on the billing account linked to your credit card.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You are running a data warehouse on BigQuery. A partner company is offering a recommendation engine based on the data in your data warehouse. The partner company is also running their application on Google Cloud. They manage the resources in their own project, but they need access to the BigQuery dataset in your project. You want to provide the partner company with access to the dataset. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Ask the partner to create a Service Account in their project, and grant their Service Account access to the BigQuery dataset in your project.", "isCorrect": true },
+                { "text": "Ask the partner to create a Service Account in their project, and have them give the Service Account access to BigQuery in their project.", "isCorrect": false },
+                { "text": "Create a Service Account in your own project, and ask the partner to grant this Service Account access to BigQuery in their project.", "isCorrect": false },
+                { "text": "Create a Service Account in your own project, and grant this Service Account access to BigQuery in your project.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "Your web application has been running successfully on Cloud Run for Anthos. You want to evaluate an updated version of the application with a specific percentage of your production users (canary deployment). What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Create a new revision with the new version of the application. Split traffic between this version and the version that is currently running.", "isCorrect": true },
+                { "text": "Create a new service with the new version of the application. Split traffic between this version and the version that is currently running.", "isCorrect": false },
+                { "text": "Create a new service with the new version of the application. Add an HTTP Load Balancer in front of both services.", "isCorrect": false },
+                { "text": "Create a new revision with the new version of the application. Add an HTTP Load Balancer in front of both revisions.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "Your company developed a mobile game that is deployed on Google Cloud. Gamers are connecting to the game with their personal phones over the Internet. The game sends UDP packets to update the servers about the gamers' actions while they are playing in multiplayer mode. Your game backend can scale over multiple virtual machines (VMs), and you want to expose the VMs over a single IP address. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Configure an External Network load balancer in front of the application servers.", "isCorrect": true },
+                { "text": "Configure an SSL Proxy load balancer in front of the application servers.", "isCorrect": false },
+                { "text": "Configure an Internal UDP load balancer in front of the application servers.", "isCorrect": false },
+                { "text": "Configure an External HTTP(s) load balancer in front of the application servers.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You are working for a hospital that stores its medical images in an on-premises data room. The hospital wants to use Cloud Storage for archival storage of these images. The hospital wants an automated process to upload any new medical images to Cloud Storage. You need to design and implement a solution. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Create a script that uses the gsutil command line interface to synchronize the on-premises storage with Cloud Storage. Schedule the script as a cron job.", "isCorrect": true },
+                { "text": "Deploy a Dataflow job from the batch template, ג€Datastore to Cloud Storage.ג€ Schedule the batch job on the desired interval.", "isCorrect": false },
+                { "text": "Create a Pub/Sub topic, and enable a Cloud Storage trigger for the Pub/Sub topic. Create an application that sends all medical images to the Pub/Sub topic.", "isCorrect": false },
+                { "text": "In the Cloud Console, go to Cloud Storage. Upload the relevant images to the appropriate bucket.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "Your auditor wants to view your organization's use of data in Google Cloud. The auditor is most interested in auditing who accessed data in Cloud Storage buckets. You need to help the auditor access the data they need. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Turn on Data Access Logs for the buckets they want to audit, and then build a query in the log viewer that filters on Cloud Storage.", "isCorrect": true },
+                { "text": "Assign the appropriate permissions, and then create a Data Studio report on Admin Activity Audit Logs.", "isCorrect": false },
+                { "text": "Assign the appropriate permissions, and then use Cloud Monitoring to review metrics.", "isCorrect": false },
+                { "text": "Use the export logs API to provide the Admin Activity Audit Logs in the format they want.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You received a JSON file that contained a private key of a Service Account in order to get access to several resources in a Google Cloud project. You downloaded and installed the Cloud SDK and want to use this private key for authentication and authorization when performing gcloud commands. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Use the command gcloud auth activate-service-account and point it to the private key.", "isCorrect": true },
+                { "text": "Use the command gcloud auth login and point it to the private key.", "isCorrect": false },
+                { "text": "Place the private key file in the installation directory of the Cloud SDK and rename it to ג€credentials.jsonג€.", "isCorrect": false },
+                { "text": "Place the private key file in your home directory and rename it to ג€GOOGLE_APPLICATION_CREDENTIALSג€.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You are working with a Cloud SQL MySQL database at your company. You need to retain a month-end copy of the database for three years for audit purposes. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Set up an export job for the first of the month. Write the export file to an Archive class Cloud Storage bucket.", "isCorrect": true },
+                { "text": "Save the automatic first-of-the-month backup for three years. Store the backup file in an Archive class Cloud Storage bucket.", "isCorrect": false },
+                { "text": "Set up an on-demand backup for the first of the month. Write the backup to an Archive class Cloud Storage bucket.", "isCorrect": false },
+                { "text": "Convert the automatic first-of-the-month backup to an export file. Write the export file to a Coldline class Cloud Storage bucket.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You are monitoring an application and receive user feedback that a specific error is spiking. You notice that the error is caused by a Service Account having insufficient permissions. You are able to solve the problem but want to be notified if the problem recurs. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Create a custom log-based metric for the specific error to be used in an Alerting Policy.", "isCorrect": true },
+                { "text": "In the Log Viewer, filter the logs on severity 'Error' and the name of the Service Account.", "isCorrect": false },
+                { "text": "Create a sink to BigQuery to export all the logs. Create a Data Studio dashboard on the exported logs.", "isCorrect": false },
+                { "text": "Grant Project Owner access to the Service Account.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You are developing a financial trading application that will be used globally. Data is stored and queried using a relational structure, and clients from all over the world should get the exact identical state of the data. The application will be deployed in multiple regions to provide the lowest latency to end users. You need to select a storage option for the application data while minimizing latency. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Use Cloud Spanner for data storage.", "isCorrect": true },
+                { "text": "Use Cloud Bigtable for data storage.", "isCorrect": false },
+                { "text": "Use Cloud SQL for data storage.", "isCorrect": false },
+                { "text": "Use Firestore for data storage.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You are about to deploy a new Enterprise Resource Planning (ERP) system on Google Cloud. The application holds the full database in-memory for fast data access, and you need to configure the most appropriate resources on Google Cloud for this application. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Provision Compute Engine instances with M1 machine type.", "isCorrect": true },
+                { "text": "Provision preemptible Compute Engine instances.", "isCorrect": false },
+                { "text": "Provision Compute Engine instances with GPUs attached.", "isCorrect": false },
+                { "text": "Provision Compute Engine instances with local SSDs attached.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You have developed an application that consists of multiple microservices, with each microservice packaged in its own Docker container image. You want to deploy the entire application on Google Kubernetes Engine so that each microservice can be scaled individually. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Create and deploy a Deployment per microservice.", "isCorrect": true },
+                { "text": "Create and deploy a Custom Resource Definition per microservice.", "isCorrect": false },
+                { "text": "Create and deploy a Docker Compose File.", "isCorrect": false },
+                { "text": "Create and deploy a Job per microservice.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You will have several applications running on different Compute Engine instances in the same project. You want to specify at a more granular level the service account each instance uses when calling Google Cloud APIs. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "When creating the instances, specify a Service Account for each instance.", "isCorrect": true },
+                { "text": "When creating the instances, assign the name of each Service Account as instance metadata.", "isCorrect": false },
+                { "text": "After starting the instances, use gcloud compute instances update to specify a Service Account for each instance.", "isCorrect": false },
+                { "text": "After starting the instances, use gcloud compute instances update to assign the name of the relevant Service Account as instance metadata.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You are creating an application that will run on Google Kubernetes Engine. You have identified MongoDB as the most suitable database system for your application and want to deploy a managed MongoDB environment that provides a support SLA. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Deploy MongoDB Atlas from the Google Cloud Marketplace.", "isCorrect": true },
+                { "text": "Create a Cloud Bigtable cluster, and use the HBase API.", "isCorrect": false },
+                { "text": "Download a MongoDB installation package, and run it on Compute Engine instances.", "isCorrect": false },
+                { "text": "Download a MongoDB installation package, and run it on a Managed Instance Group.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You are managing a project for the Business Intelligence (BI) department in your company. A data pipeline ingests data into BigQuery via streaming. You want the users in the BI department to be able to run the custom SQL queries against the latest data in BigQuery. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Assign the IAM role of BigQuery User to a Google Group that contains the members of the BI team.", "isCorrect": true },
+                { "text": "Create a Data Studio dashboard that uses the related BigQuery tables as a source and give the BI team view access to the Data Studio dashboard.", "isCorrect": false },
+                { "text": "Create a Service Account for the BI team and distribute a new private key to each member of the BI team.", "isCorrect": false },
+                { "text": "Use Cloud Scheduler to schedule a batch Dataflow job to copy the data from BigQuery to the BI team's internal data warehouse.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "Your company is moving its entire workload to Compute Engine. Some servers should be accessible through the Internet, and other servers should only be accessible over the internal network. All servers need to be able to talk to each other over specific ports and protocols. The current on-premises network relies on a demilitarized zone (DMZ) for the public servers and a Local Area Network (LAN) for the private servers. You need to design the networking infrastructure on Google Cloud to match these requirements. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "1. Create a single VPC with a subnet for the DMZ and a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public ingress traffic for the DMZ.", "isCorrect": true },
+                { "text": "1. Create a single VPC with a subnet for the DMZ and a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public egress traffic for the DMZ.", "isCorrect": false },
+                { "text": "1. Create a VPC with a subnet for the DMZ and another VPC with a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public ingress traffic for the DMZ.", "isCorrect": false },
+                { "text": "1. Create a VPC with a subnet for the DMZ and another VPC with a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public egress traffic for the DMZ.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You have just created a new project which will be used to deploy a globally distributed application. You will use Cloud Spanner for data storage. You want to create a Cloud Spanner instance. You want to perform the first step in preparation of creating the instance. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Enable the Cloud Spanner API.", "isCorrect": true },
+                { "text": "Configure your Cloud Spanner instance to be multi-regional.", "isCorrect": false },
+                { "text": "Create a new VPC network with subnetworks in all desired regions.", "isCorrect": false },
+                { "text": "Grant yourself the IAM role of Cloud Spanner Admin.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You have created a new project in Google Cloud through the gcloud command line interface (CLI) and linked a billing account. You need to create a new Compute Engine instance using the CLI. You need to perform the prerequisite stops. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Enable the compute googleapis.com API.", "isCorrect": true },
+                { "text": "Create a Cloud Monitoring Workspace.", "isCorrect": false },
+                { "text": "Create a VPC network in the project.", "isCorrect": false },
+                { "text": "Grant yourself the IAM role of Computer Admin.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "Your company has developed an Appliaction that consists of multiple microservices. You want to deploy the application to Google Kubernetes Engine (GKE), and you want to ensure that the cluster can scale as more applications are deployed in the future. You want to avoid manual intervention when each new application is deployed. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Create a GKE cluster with autoscaling enabled on the node pool. Set a minimum and maximum for the size of the node pool.", "isCorrect": true },
+                { "text": "Deploy the application on GKE, and add a HorizontalPodAutoscaler to the deployment.", "isCorrect": false },
+                { "text": "Deploy the application on GKE, and add a VerticalPodAutoscaler to the deployment.", "isCorrect": false },
+                { "text": "Create a separate node pool for each application, and deploy each application to its dedicated node pool.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You need to manage a third-party application that will run on a Compute Engine instance. Other Compute Engine instances are already running with default configuration. Application installation files are hosted on Cloud Storage. You need to access these files from the new instance without allowing other virtual machines (VMs) to access these files. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Create a new service account and assign this service account to the new instance. Grant the service account permissions on Cloud Storage.", "isCorrect": true },
+                { "text": "Create the instance with the default Compute Engine service account. Grant the service account permissions on Cloud Storage.", "isCorrect": false },
+                { "text": "Create the instance with the default Compute Engine service account. Add metadata to the objects on Cloud Storage that matches the metadata on the new instance.", "isCorrect": false },
+                { "text": "Create a new service account and assign this service account to the new instance. Add metadata to the objects on Cloud Storage that matches the metadata on the new instance.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You need to configure optimal data storage for files stored in Cloud Storage for minimal cost. The files are used in a mission-critical analytics pipeline that is used continually. The users are in Boston, MA (United States). What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Configure regional storage for the region closest to the users. Configure a Standard storage class.", "isCorrect": true },
+                { "text": "Configure regional storage for the region closest to the users. Configure a Nearline storage class.", "isCorrect": false },
+                { "text": "Configure dual-regional storage for the dual region closest to the users. Configure a Nearline storage class.", "isCorrect": false },
+                { "text": "Configure dual-regional storage for the dual region closest to the users. Configure a Standard storage class.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You are developing a new web application that will be deployed on Google Cloud Platform. As part of your release cycle, you want to test updates to your application on a small portion of real user traffic. The majority of the users should still be directed towards a stable version of your application. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Deploy the application on App Engine. For each update, create a new version of the same service. Configure traffic splitting to send a small percentage of traffic to the new version.", "isCorrect": true },
+                { "text": "Deploy the application on App Engine. For each update, create a new service. Configure traffic splitting to send a small percentage of traffic to the new service.", "isCorrect": false },
+                { "text": "Deploy the application on Kubernetes Engine. For a new release, update the deployment to use the new version.", "isCorrect": false },
+                { "text": "Deploy the application on Kubernetes Engine. For a new release, create a new deployment for the new version. Update the service to use the new deployment.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You need to add a group of new users to Cloud Identity. Some of the users already have existing Google accounts. You want to follow one of Google's recommended practices and avoid conflicting accounts. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Invite the user to transfer their existing account.", "isCorrect": true },
+                { "text": "Invite the user to use an email alias to resolve the conflict.", "isCorrect": false },
+                { "text": "Tell the user that they must delete their existing account.", "isCorrect": false },
+                { "text": "Tell the user to remove all personal email from the existing account.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You need to manage a Cloud Spanner instance for best query performance. Your instance in production runs in a single Google Cloud region. You need to improve performance in the shortest amount of time. You want to follow Google best practices for service configuration. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Create an alert in Cloud Monitoring to alert when the percentage of high priority CPU utilization reaches 65%. If you exceed this threshold, add nodes to your instance.", "isCorrect": true },
+                { "text": "Create an alert in Cloud Monitoring to alert when the percentage of high priority CPU utilization reaches 45%. If you exceed this threshold, add nodes to your instance.", "isCorrect": false },
+                { "text": "Create an alert in Cloud Monitoring to alert when the percentage of high priority CPU utilization reaches 45%. Use database query statistics to identify queries that result in high CPU usage, and then rewrite those queries to optimize their resource usage.", "isCorrect": false },
+                { "text": "Create an alert in Cloud Monitoring to alert when the percentage of high priority CPU utilization reaches 65%. Use database query statistics to identify queries that result in high CPU usage, and then rewrite those queries to optimize their resource usage.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "Your company has an internal application for managing transactional orders. The application is used exclusively by employees in a single physical location. The application requires strong consistency, fast queries, and ACID guarantees for multi-table transactional updates. The first version of the application is implemented in PostgreSQL, and you want to deploy it to the cloud with minimal code changes. Which database is most appropriate for this application?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Cloud SQL", "isCorrect": true },
+                { "text": "BigQuery", "isCorrect": false },
+                { "text": "Cloud Spanner", "isCorrect": false },
+                { "text": "Cloud Datastore", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You are assigned to maintain a Google Kubernetes Engine (GKE) cluster named 'dev' that was deployed on Google Cloud. You want to manage the GKE configuration using the command line interface (CLI). You have just downloaded and installed the Cloud SDK. You want to ensure that future CLI commands by default address this specific cluster. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Use the command gcloud config set container/cluster dev.", "isCorrect": true },
+                { "text": "Use the command gcloud container clusters update dev.", "isCorrect": false },
+                { "text": "Create a file called gke.default in the ~/.gcloud folder that contains the cluster name.", "isCorrect": false },
+                { "text": "Create a file called defaults.json in the ~/.gcloud folder that contains the cluster name.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "The sales team has a project named Sales Data Digest that has the ID acme-data-digest. You need to set up similar Google Cloud resources for the marketing team but their resources must be organized independently of the sales team. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Create another project with the ID acme-marketing-data-digest for the Marketing team and deploy the resources there.", "isCorrect": true },
+                { "text": "Grant the Project Editor role to the Marketing team for acme-data-digest.", "isCorrect": false },
+                { "text": "Create a Project Lien on acme-data-digest and then grant the Project Editor role to the Marketing team.", "isCorrect": false },
+                { "text": "Create a new project named Marketing Data Digest and use the ID acme-data-digest. Grant the Project Editor role to the Marketing team.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You have deployed multiple Linux instances on Compute Engine. You plan on adding more instances in the coming weeks. You want to be able to access all of these instances through your SSH client over the internet without having to configure specific access on the existing and new instances. You do not want the Compute Engine instances to have a public IP. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Configure Cloud Identity-Aware Proxy for SSH and TCP resources", "isCorrect": true },
+                { "text": "Configure Cloud Identity-Aware Proxy for HTTPS resources.", "isCorrect": false },
+                { "text": "Create an SSH keypair and store the public key as a project-wide SSH Key.", "isCorrect": false },
+                { "text": "Create an SSH keypair and store the private key as a project-wide SSH Key.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You have created an application that is packaged into a Docker image. You want to deploy the Docker image as a workload on Google Kubernetes Engine. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Upload the image to Container Registry and create a Kubernetes Deployment referencing the image.", "isCorrect": true },
+                { "text": "Upload the image to Cloud Storage and create a Kubernetes Service referencing the image.", "isCorrect": false },
+                { "text": "Upload the image to Cloud Storage and create a Kubernetes Deployment referencing the image.", "isCorrect": false },
+                { "text": "Upload the image to Container Registry and create a Kubernetes Service referencing the image.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You are using Data Studio to visualize a table from your data warehouse that is built on top of BigQuery. Data is appended to the data warehouse during the day. At night, the daily summary is recalculated by overwriting the table. You just noticed that the charts in Data Studio are broken, and you want to analyze the problem. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Use the BigQuery interface to review the nightly job and look for any errors.", "isCorrect": true },
+                { "text": "Review the Error Reporting page in the Cloud Console to find any errors.", "isCorrect": false },
+                { "text": "Use Cloud Debugger to find out why the data was not refreshed correctly.", "isCorrect": false },
+                { "text": "In Cloud Logging, create a filter for your Data Studio report.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You have been asked to set up the billing configuration for a new Google Cloud customer. Your customer wants to group resources that share common IAM policies. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Use folders to group resources that share common IAM policies.", "isCorrect": true },
+                { "text": "Use labels to group resources that share common IAM policies.", "isCorrect": false },
+                { "text": "Set up a proper billing account structure to group IAM policies.", "isCorrect": false },
+                { "text": "Set up a proper project naming structure to group IAM policies.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You have been asked to create robust Virtual Private Network (VPN) connectivity between a new Virtual Private Cloud (VPC) and a remote site. Key requirements include dynamic routing, a shared address space of 10.19.0.1/22, and no overprovisioning of tunnels during a failover event. You want to follow Google- recommended practices to set up a high availability Cloud VPN. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Use a custom mode VPC network, use Cloud Router border gateway protocol (BGP) routes, and use active/passive routing.", "isCorrect": true },
+                { "text": "Use a custom mode VPC network, configure static routes, and use active/passive routing.", "isCorrect": false },
+                { "text": "Use an automatic mode VPC network, configure static routes, and use active/active routing.", "isCorrect": false },
+                { "text": "Use an automatic mode VPC network, use Cloud Router border gateway protocol (BGP) routes, and configure policy-based routing.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You are running multiple microservices in a Kubernetes Engine cluster. One microservice is rendering images. The microservice responsible for the image rendering requires a large amount of CPU time compared to the memory it requires. The other microservices are workloads that are optimized for n1-standard machine types. You need to optimize your cluster so that all workloads are using resources as efficiently as possible. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Create a node pool with compute-optimized machine type nodes for the image rendering microservice. Use the node pool with general-purpose machine type nodes for the other microservices.", "isCorrect": true },
+                { "text": "Assign the pods of the image rendering microservice a higher pod priority than the other microservices.", "isCorrect": false },
+                { "text": "Use the node pool with general-purpose machine type nodes for the image rendering microservice. Create a node pool with compute-optimized machine type nodes for the other microservices.", "isCorrect": false },
+                { "text": "Configure the required amount of CPU and memory in the resource requests specification of the image rendering microservice deployment. Keep the resource requests for the other microservices at the default.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "Your organization has three existing Google Cloud projects. You need to bill the Marketing department for only their Google Cloud services for a new initiative within their group. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "1. Verify that you are assigned the Billing Administrator IAM role for your organization's Google Cloud Project for the Marketing department. 2. Link the new project to a Marketing Billing Account.", "isCorrect": true },
+                { "text": "1. Verify that you are assigned the Billing Administrator IAM role for your organization's Google Cloud account. 2. Create a new Google Cloud Project for the Marketing department. 3. Set the default key-value project labels to department:marketing for all services in this project.", "isCorrect": false },
+                { "text": "1. Verify that you are assigned the Organization Administrator IAM role for your organization's Google Cloud account. 2. Create a new Google Cloud Project for the Marketing department. 3. Link the new project to a Marketing Billing Account.", "isCorrect": false },
+                { "text": "1. Verify that you are assigned the Organization Administrator IAM role for your organization's Google Cloud account. 2. Create a new Google Cloud Project for the Marketing department. 3. Set the default key-value project labels to department:marketing for all services in this project.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You deployed an application on a managed instance group in Compute Engine. The application accepts Transmission Control Protocol (TCP) traffic on port 389 and requires you to preserve the IP address of the client who is making a request. You want to expose the application to the internet by using a load balancer. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Expose the application by using an external TCP Network Load Balancer.", "isCorrect": true },
+                { "text": "Expose the application by using a TCP Proxy Load Balancer.", "isCorrect": false },
+                { "text": "Expose the application by using an SSL Proxy Load Balancer.", "isCorrect": false },
+                { "text": "Expose the application by using an internal TCP Network Load Balancer.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You are building a multi-player gaming application that will store game information in a database. As the popularity of the application increases, you are concerned about delivering consistent performance. You need to ensure an optimal gaming performance for global users, without increasing the management complexity. What should you do?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Use Cloud Spanner to store user data mapped to the game statistics.", "isCorrect": true },
+                { "text": "Use Cloud SQL database with cross-region replication to store game statistics in the EU, US, and APAC regions.", "isCorrect": false },
+                { "text": "Use BigQuery to store game statistics with a Redis on Memorystore instance in the front to provide global consistency.", "isCorrect": false },
+                { "text": "Store game statistics in a Bigtable database partitioned by username.", "isCorrect": false }
 
             ]
         },
         {
-            "question": "",
+            "question": "You are building an application that stores relational data from users. Users across the globe will use this application. Your CTO is concerned about the scaling requirements because the size of the user base is unknown. You need to implement a database solution that can scale with your user growth with minimum configuration changes. Which storage solution should you use?",
             "answers": [
-                { "text": "", "isCorrect": true },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false },
-                { "text": "", "isCorrect": false }
+                { "text": "Cloud Spanner", "isCorrect": true },
+                { "text": "Cloud SQL", "isCorrect": false },
+                { "text": "Firestore", "isCorrect": false },
+                { "text": "Bigtable", "isCorrect": false }
 
             ]
         },
