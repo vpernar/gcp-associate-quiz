@@ -64,8 +64,9 @@ function displayQuestionsOnPage(page) {
 function displayQuestion(question, questionNumber, container) {
     const questionDiv = document.createElement('div');
     questionDiv.classList.add('question');
+
     const questionText = document.createElement('p');
-    questionText.textContent = questionNumber + '. ' + question.question;
+    questionText.innerHTML = questionNumber + '. ' + question.question.replace(/\n/g, '<br>');
     questionDiv.appendChild(questionText);
 
     if (question.image) {
