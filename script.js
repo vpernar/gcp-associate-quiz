@@ -10,14 +10,13 @@ fetch('./data.json')
     .then(response => response.json())
     .then(data => {
         questionsData = data;
+        shuffleArray(questionsData);
         createQuestionContainers(questionsData);
         startQuiz();
     })
     .catch(error => console.error('Error fetching data:', error));
 
 function createQuestionContainers(questions) {
-    shuffleArray(questions);
-
     questionContainers = questions.map((question, i) => {
         const questionContainer = document.createElement('div');
         questionContainer.classList.add('question-container');
@@ -28,9 +27,8 @@ function createQuestionContainers(questions) {
 
 function startQuiz() {
     displayQuestionsOnPage(currentPage);
-
     const nextButton = createNavigationButton('Next Page', () => {
-        if (currentPage !== Math.ceil(questionContainers.length / questionsPerPage)) {
+        if (currentPage < Math.ceil(questionsData.length / questionsPerPage)) {
             currentPage++;
             displayQuestionsOnPage(currentPage);
             scrollToTop();
@@ -46,7 +44,6 @@ function startQuiz() {
     });
 
     const quizModeButton = createNavigationButton('Learning Quiz', toggleQuizMode);
-
     navigationContainer.innerHTML = '';
     navigationContainer.appendChild(backButton);
     navigationContainer.appendChild(quizModeButton);
@@ -56,18 +53,17 @@ function startQuiz() {
 function displayQuestionsOnPage(page) {
     const startIndex = (page - 1) * questionsPerPage;
     let endIndex = startIndex + questionsPerPage;
-    endIndex = Math.min(endIndex, questionContainers.length);
+    endIndex = Math.min(endIndex, questionsData.length);
 
     quizContainer.innerHTML = '';
-    questionContainers.slice(startIndex, endIndex).forEach(container => {
-        quizContainer.appendChild(container);
-    });
+    for (let i = startIndex; i < endIndex; i++) {
+        quizContainer.appendChild(questionContainers[i]);
+    }
 }
 
 function displayQuestion(question, questionNumber, container) {
     const questionDiv = document.createElement('div');
     questionDiv.classList.add('question');
-
     const questionText = document.createElement('p');
     questionText.textContent = questionNumber + '. ' + question.question;
     questionDiv.appendChild(questionText);
@@ -79,7 +75,6 @@ function displayQuestion(question, questionNumber, container) {
     }
 
     shuffleArray(question.answers);
-
     const answersList = document.createElement('ul');
     answersList.classList.add('answers');
 
@@ -120,10 +115,7 @@ function checkAnswer(clickedAnswer, question) {
 }
 
 function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function shuffleArray(array) {
@@ -148,14 +140,13 @@ function sortQuestionsById(questions) {
 function toggleQuizMode() {
     if (isLearningMode) {
         shuffleArray(questionsData);
-        questionContainers = createQuestionContainers(questionsData);
         document.getElementById('learning-quiz-button').textContent = 'Learning Quiz';
     } else {
-        questionsData = sortQuestionsById([...questionsData]);
-        questionContainers = createQuestionContainers(questionsData);
+        sortQuestionsById(questionsData);
         document.getElementById('learning-quiz-button').textContent = 'Shuffle Quiz';
     }
     isLearningMode = !isLearningMode;
+    createQuestionContainers(questionsData);
     restartQuiz();
 }
 
