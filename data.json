@@ -1147,7 +1147,7 @@
   },
   {
     "id": 53,
-    "question": "Your company has a 3-tier solution running on Compute Engine. The configuration of the current infrastructure is shown below. Each tier has a service account that is associated with all instances within it. You need to enable communication on TCP port 8080 between tiers as follows:\n* Instances in tier #1 must communicate with tier #2.\n* Instances in tier #2 must communicate with tier #3.\nWhat should you do?",
+    "question": "Your company has a 3-tier solution running on Compute Engine. The configuration of the current infrastructure is shown below. Each tier has a service account that is associated with all instances within it. You need to enable communication on TCP port 8080 between tiers as follows:|br|* Instances in tier #1 must communicate with tier #2.|br|* Instances in tier #2 must communicate with tier #3.|br|What should you do?",
     "image": "./images/3.png",
     "answers": [
       {
@@ -2160,7 +2160,7 @@
         "isCorrect": false
       },
       {
-        "text": "Create a secondary index using the following Data Definition Language (DDL): CREATE INDEX person_id_ix\nON Persons(\n\tperson_id,\n\tfirst_name\n\tlast_name,\n) PERSON (\n\tprofile_picture\n)",
+        "text": "Create a secondary index using the following Data Definition Language (DDL): CREATE INDEX person_id_ix|br|ON Persons(|br|\tperson_id,|br|\tfirst_name|br|\tlast_name,|br|) PERSON (|br|\tprofile_picture|br|)",
         "isCorrect": false
       }
     ]
@@ -3487,7 +3487,7 @@
   },
   {
     "id": 159,
-    "question": "You are building an application that processes data files uploaded from thousands of suppliers. Your primary goals for the application are data security and the expiration of aged data. You need to design the application to:\n* Restrict access so that suppliers can access only their own data.\n* Give suppliers write access to data only for 30 minutes.\n* Delete data that is over 45 days old.\nYou have a very short development cycle, and you need to make sure that the application requires minimal maintenance. Which two strategies should you use?\n(Choose two.)",
+    "question": "You are building an application that processes data files uploaded from thousands of suppliers. Your primary goals for the application are data security and the expiration of aged data. You need to design the application to:|br|* Restrict access so that suppliers can access only their own data.|br|* Give suppliers write access to data only for 30 minutes.|br|* Delete data that is over 45 days old.|br|You have a very short development cycle, and you need to make sure that the application requires minimal maintenance. Which two strategies should you use?|br|(Choose two.)",
     "answers": [
       {
         "text": "Build a lifecycle policy to delete Cloud Storage objects after 45 days.",
@@ -4528,19 +4528,19 @@
     "question": "You have two subnets (subnet-a and subnet-b) in the default VPC. Your database servers are running in subnet-a. Your application servers and web servers are running in subnet-b. You want to configure a firewall rule that only allows database traffic from the application servers to the database servers. What should you do?",
     "answers": [
       {
-        "text": "• Create service accounts sa-app and sa-db.\n• Associate service account sa-app with the application servers and the service account sa-db with the database servers.\n• Create an ingress firewall rule to allow network traffic from source service account sa-app to target service account sa-db.",
+        "text": "• Create service accounts sa-app and sa-db.|br|• Associate service account sa-app with the application servers and the service account sa-db with the database servers.|br|• Create an ingress firewall rule to allow network traffic from source service account sa-app to target service account sa-db.",
         "isCorrect": true
       },
       {
-        "text": "• Create network tags app-server and db-server.\n• Add the app-server tag to the application servers and the db-server tag to the database servers.\n• Create an egress firewall rule to allow network traffic from source network tag app-server to target network tag db-server.",
+        "text": "• Create network tags app-server and db-server.|br|• Add the app-server tag to the application servers and the db-server tag to the database servers.|br|• Create an egress firewall rule to allow network traffic from source network tag app-server to target network tag db-server.",
         "isCorrect": false
       },
       {
-        "text": "• Create a service account sa-app and a network tag db-server.\n• Associate the service account sa-app with the application servers and the network tag db-server with the database servers.\n• Create an ingress firewall rule to allow network traffic from source VPC IP addresses and target the subnet-a IP addresses.",
+        "text": "• Create a service account sa-app and a network tag db-server.|br|• Associate the service account sa-app with the application servers and the network tag db-server with the database servers.|br|• Create an ingress firewall rule to allow network traffic from source VPC IP addresses and target the subnet-a IP addresses.",
         "isCorrect": false
       },
       {
-        "text": "• Create a network tag app-server and service account sa-db.\n• Add the tag to the application servers and associate the service account with the database servers.\n• Create an egress firewall rule to allow network traffic from source network tag app-server to target service account sa-db.",
+        "text": "• Create a network tag app-server and service account sa-db.|br|• Add the tag to the application servers and associate the service account with the database servers.|br|• Create an egress firewall rule to allow network traffic from source network tag app-server to target service account sa-db.",
         "isCorrect": false
       }
     ]
@@ -4767,7 +4767,7 @@
   },
   {
     "id": 217,
-    "question": "You are planning to migrate the following on-premises data management solutions to Google Cloud: \n• One MySQL cluster for your main database \n• Apache Kafka for your event streaming platform \n• One Cloud SQL for PostgreSQL database for your analytical and reporting needs \nYou want to implement Google-recommended solutions for the migration. You need to ensure that the new solutions provide global scalability and require minimal operational and infrastructure management. What should you do?",
+    "question": "You are planning to migrate the following on-premises data management solutions to Google Cloud: |br|• One MySQL cluster for your main database |br|• Apache Kafka for your event streaming platform |br|• One Cloud SQL for PostgreSQL database for your analytical and reporting needs |br|You want to implement Google-recommended solutions for the migration. You need to ensure that the new solutions provide global scalability and require minimal operational and infrastructure management. What should you do?",
     "answers": [
       {
         "text": "Migrate from MySQL to Cloud Spanner, from Kafka to Pub/Sub, and from Cloud SQL for PostgreSQL to BigQuery.",
@@ -5119,7 +5119,7 @@
   },
   {
     "id": 233,
-    "question": "You used the gcloud container clusters command to create two Google Cloud Kubernetes (GKE) clusters: prod-cluster and dev-cluster. \n• prod-cluster is a standard cluster. \n• dev-cluster is an auto-pilot cluster. \nWhen you run the kubectl get nodes command, you only see the nodes from prod-cluster. Which commands should you run to check the node status for dev-cluster?",
+    "question": "You used the gcloud container clusters command to create two Google Cloud Kubernetes (GKE) clusters: prod-cluster and dev-cluster. |br|• prod-cluster is a standard cluster. |br|• dev-cluster is an auto-pilot cluster. |br|When you run the kubectl get nodes command, you only see the nodes from prod-cluster. Which commands should you run to check the node status for dev-cluster?",
     "answers": [
       {
         "text": "gcloud container clusters get-credentials dev-cluster kubectl get nodes",
@@ -5130,18 +5130,18 @@
         "isCorrect": false
       },
       {
-        "text": "kubectl config set-context dev-cluster \nkubectl cluster-info",
+        "text": "kubectl config set-context dev-cluster |br|kubectl cluster-info",
         "isCorrect": false
       },
       {
-        "text": "kubectl config set-credentials dev-cluster \nkubectl cluster-info",
+        "text": "kubectl config set-credentials dev-cluster |br|kubectl cluster-info",
         "isCorrect": false
       }
     ]
   },
   {
     "id": 234,
-    "question": "You recently discovered that your developers are using many service account keys during their development process. While you work on a long term improvement, you need to quickly implement a process to enforce short-lived service account credentials in your company. You have the following requirements: \n• All service accounts that require a key should be created in a centralized project called pj-sa. \n• Service account keys should only be valid for one day.",
+    "question": "You recently discovered that your developers are using many service account keys during their development process. While you work on a long term improvement, you need to quickly implement a process to enforce short-lived service account credentials in your company. You have the following requirements: |br|• All service accounts that require a key should be created in a centralized project called pj-sa. |br|• Service account keys should only be valid for one day.",
     "answers": [
       {
         "text": "Implement a Cloud Run job to rotate all service account keys periodically in pj-sa. Enforce an org policy to deny service account key creation with an exception to pj-sa.",
@@ -5188,19 +5188,19 @@
     "question": "You have a Bigtable instance that consists of three nodes that store personally identifiable information (PII) data. You need to log all read or write operations, including any metadata or configuration reads of this database table, in your company’s Security Information and Event Management (SIEM) system. What should you do?",
     "answers": [
       {
-        "text": "• Navigate to Cloud Monitoring in the Google Cloud console, and create a custom monitoring job for the Bigtable instance to track all changes. \n• Create an alert by using webhook endpoints, with the SIEM endpoint as a receiver.",
+        "text": "• Navigate to Cloud Monitoring in the Google Cloud console, and create a custom monitoring job for the Bigtable instance to track all changes. |br|• Create an alert by using webhook endpoints, with the SIEM endpoint as a receiver.",
         "isCorrect": false
       },
       {
-        "text": "• Navigate to the Audit Logs page in the Google Cloud console, and enable Data Read, Data Write and Admin Read logs for the Bigtable instance. \n• Create a Pub/Sub topic as a Cloud Logging sink destination, and add your SIEM as a subscriber to the topic.",
+        "text": "• Navigate to the Audit Logs page in the Google Cloud console, and enable Data Read, Data Write and Admin Read logs for the Bigtable instance. |br|• Create a Pub/Sub topic as a Cloud Logging sink destination, and add your SIEM as a subscriber to the topic.",
         "isCorrect": true
       },
       {
-        "text": "• Navigate to the Audit Logs page in the Google Cloud console, and enable Admin Write logs for the Bigtable instance. \n• Create a Cloud Functions instance to export logs from Cloud Logging to your SIEM",
+        "text": "• Navigate to the Audit Logs page in the Google Cloud console, and enable Admin Write logs for the Bigtable instance. |br|• Create a Cloud Functions instance to export logs from Cloud Logging to your SIEM",
         "isCorrect": false
       },
       {
-        "text": "• Install the Ops Agent on the Bigtable instance during configuration. \n• Create a service account with read permissions for the Bigtable instance. \n• Create a custom Dataflow job with this service account to export logs to the company’s SIEM system.",
+        "text": "• Install the Ops Agent on the Bigtable instance during configuration. |br|• Create a service account with read permissions for the Bigtable instance. |br|• Create a custom Dataflow job with this service account to export logs to the company’s SIEM system.",
         "isCorrect": false
       }
     ]
@@ -5229,7 +5229,7 @@
   },
   {
     "id": 238,
-    "question": "Your company wants to migrate their on-premises workloads to Google Cloud. The current on-premises workloads consist of: \n • A Flask web application\n• A backend API\n• A scheduled long-running background job for ETL and reporting \nYou need to keep operational costs low. You want to follow Google-recommended practices to migrate these workloads to serverless solutions on Google Cloud. What should you do?",
+    "question": "Your company wants to migrate their on-premises workloads to Google Cloud. The current on-premises workloads consist of: |br| • A Flask web application|br|• A backend API|br|• A scheduled long-running background job for ETL and reporting |br|You need to keep operational costs low. You want to follow Google-recommended practices to migrate these workloads to serverless solutions on Google Cloud. What should you do?",
     "answers": [
       {
         "text": "Migrate the web application to App Engine and the backend API to Cloud Run. Use Cloud Tasks to run your background job on Cloud Run.",

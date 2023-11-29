@@ -43,10 +43,15 @@ function startQuiz() {
         }
     });
 
+    const showAllButton = createNavigationButton('Show All Questions', () => {
+        showAllQuestions();
+    });
+
     const quizModeButton = createNavigationButton('Learning Quiz', toggleQuizMode);
     navigationContainer.innerHTML = '';
     navigationContainer.appendChild(backButton);
     navigationContainer.appendChild(quizModeButton);
+    navigationContainer.appendChild(showAllButton);
     navigationContainer.appendChild(nextButton);
 }
 
@@ -66,7 +71,7 @@ function displayQuestion(question, questionNumber, container) {
     questionDiv.classList.add('question');
 
     const questionText = document.createElement('p');
-    questionText.innerHTML = questionNumber + '. ' + question.question.replace(/\n/g, '<br>');
+    questionText.innerHTML = questionNumber + '. ' + question.question.replace(/\|br\|/g, '<br>');
     questionDiv.appendChild(questionText);
 
     if (question.image) {
@@ -89,7 +94,7 @@ function displayQuestion(question, questionNumber, container) {
     question.answers.forEach((answer, index) => {
         const answerItem = document.createElement('li');
         answerItem.classList.add('answer');
-        answerItem.textContent = String.fromCharCode(97 + index) + ') ' + answer.text;
+        answerItem.innerHTML = String.fromCharCode(97 + index) + ') ' + answer.text.replace(/\|br\|/g, '<br>'); // Replace \n with <br> for answers
         answerItem.dataset.index = index;
 
         answersList.appendChild(answerItem);
@@ -149,6 +154,24 @@ function toggleQuizMode() {
     isLearningMode = !isLearningMode;
     createQuestionContainers(questionsData);
     restartQuiz();
+}
+
+function showAllQuestions() {
+    for (let i = 0; i < questionContainers.length; i++) {
+        const questionContainer = questionContainers[i];
+        const answers = questionContainer.querySelectorAll('.answer');
+
+        answers.forEach(answerItem => {
+            const isCorrect = questionsData[i].answers[answerItem.dataset.index].isCorrect;
+
+            if (isCorrect) {
+                answerItem.classList.add('correct-answer');
+            } else {
+                answerItem.classList.add('incorrect-answer');
+            }
+            answerItem.style.pointerEvents = 'none';
+        });
+    }
 }
 
 function restartQuiz() {
