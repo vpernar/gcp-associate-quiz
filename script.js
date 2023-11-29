@@ -1,8 +1,10 @@
 const quizContainer = document.getElementById('quiz-container');
+const navigationContainer = document.getElementById('navigation-container');
 const questionsPerPage = 10;
 let currentPage = 1;
 let questionsData;
 let questionContainers = [];
+let isLearningMode = false;
 
 fetch('./data.json')
     .then(response => response.json())
@@ -16,12 +18,12 @@ fetch('./data.json')
 function createQuestionContainers(questions) {
     shuffleArray(questions);
 
-    for (let i = 0; i < questions.length; i++) {
+    questionContainers = questions.map((question, i) => {
         const questionContainer = document.createElement('div');
         questionContainer.classList.add('question-container');
-        displayQuestion(questions[i], i + 1, questionContainer);
-        questionContainers.push(questionContainer);
-    }
+        displayQuestion(question, i + 1, questionContainer);
+        return questionContainer;
+    });
 }
 
 function startQuiz() {
@@ -43,31 +45,23 @@ function startQuiz() {
         }
     });
 
-    const showAllButton = createNavigationButton('Show All Questions', () => {
-        showAllQuestions();
-    });
+    const quizModeButton = createNavigationButton('Learning Quiz', toggleQuizMode);
 
-    const navigationContainer = document.getElementById('navigation-container');
     navigationContainer.innerHTML = '';
-
     navigationContainer.appendChild(backButton);
-    navigationContainer.appendChild(showAllButton);
+    navigationContainer.appendChild(quizModeButton);
     navigationContainer.appendChild(nextButton);
 }
 
 function displayQuestionsOnPage(page) {
     const startIndex = (page - 1) * questionsPerPage;
     let endIndex = startIndex + questionsPerPage;
-
-    if (endIndex > questionContainers.length) {
-        endIndex = questionContainers.length;
-    }
+    endIndex = Math.min(endIndex, questionContainers.length);
 
     quizContainer.innerHTML = '';
-
-    for (let i = startIndex; i < endIndex; i++) {
-        quizContainer.appendChild(questionContainers[i]);
-    }
+    questionContainers.slice(startIndex, endIndex).forEach(container => {
+        quizContainer.appendChild(container);
+    });
 }
 
 function displayQuestion(question, questionNumber, container) {
@@ -125,24 +119,6 @@ function checkAnswer(clickedAnswer, question) {
     });
 }
 
-function showAllQuestions() {
-    for (let i = 0; i < questionContainers.length; i++) {
-        const questionContainer = questionContainers[i];
-        const answers = questionContainer.querySelectorAll('.answer');
-
-        answers.forEach(answerItem => {
-            const isCorrect = questionsData[i].answers[answerItem.dataset.index].isCorrect;
-
-            if (isCorrect) {
-                answerItem.classList.add('correct-answer');
-            } else {
-                answerItem.classList.add('incorrect-answer');
-            }
-            answerItem.style.pointerEvents = 'none';
-        });
-    }
-}
-
 function scrollToTop() {
     window.scrollTo({
         top: 0,
@@ -158,10 +134,33 @@ function shuffleArray(array) {
 }
 
 function createNavigationButton(text, clickHandler) {
-    console.log("Creating button: " + text)
     const button = document.createElement('button');
     button.textContent = text;
     button.id = text.toLowerCase().replace(/\s+/g, '-') + '-button';
     button.addEventListener('click', clickHandler);
     return button;
+}
+
+function sortQuestionsById(questions) {
+    return questions.sort((a, b) => a.id - b.id);
+}
+
+function toggleQuizMode() {
+    if (isLearningMode) {
+        shuffleArray(questionsData);
+        questionContainers = createQuestionContainers(questionsData);
+        document.getElementById('learning-quiz-button').textContent = 'Learning Quiz';
+    } else {
+        questionsData = sortQuestionsById([...questionsData]);
+        questionContainers = createQuestionContainers(questionsData);
+        document.getElementById('learning-quiz-button').textContent = 'Shuffle Quiz';
+    }
+    isLearningMode = !isLearningMode;
+    restartQuiz();
+}
+
+function restartQuiz() {
+    currentPage = 1;
+    displayQuestionsOnPage(currentPage);
+    scrollToTop();
 }
