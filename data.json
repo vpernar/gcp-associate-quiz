@@ -1128,19 +1128,19 @@
     "question": "Your company has a Google Cloud Platform project that uses BigQuery for data warehousing. Your data science team changes frequently and has few members. You need to allow members of this team to perform queries. You want to follow Google-recommended practices. What should you do?",
     "answers": [
       {
-        "text": "1. Create a dedicated Google group in Cloud Identity. 2. Add each data scientist's user account to the group. 3. Assign the BigQuery jobUser role to the group.",
+        "text": "1. Create a dedicated Google group in Cloud Identity. |br|2. Add each data scientist's user account to the group. |br|3. Assign the BigQuery jobUser role to the group.",
         "isCorrect": true
       },
       {
-        "text": "1. Create an IAM entry for each data scientist's user account. 2. Assign the BigQuery jobUser role to the group.",
+        "text": "1. Create an IAM entry for each data scientist's user account. |br|2. Assign the BigQuery jobUser role to the group.",
         "isCorrect": false
       },
       {
-        "text": "1. Create an IAM entry for each data scientist's user account. 2. Assign the BigQuery dataViewer user role to the group.",
+        "text": "1. Create an IAM entry for each data scientist's user account. |br|2. Assign the BigQuery dataViewer user role to the group.",
         "isCorrect": false
       },
       {
-        "text": "1. Create a dedicated Google group in Cloud Identity. 2. Add each data scientist's user account to the group. 3. Assign the BigQuery dataViewer user role to the group.",
+        "text": "1. Create a dedicated Google group in Cloud Identity. |br|2. Add each data scientist's user account to the group. |br|3. Assign the BigQuery dataViewer user role to the group.",
         "isCorrect": false
       }
     ]
@@ -1151,19 +1151,19 @@
     "image": "./images/3.png",
     "answers": [
       {
-        "text": "1. Create an ingress firewall rule with the following settings: ג€¢ Targets: all instances with tier #2 service account ג€¢ Source filter: all instances with tier #1 service account ג€¢ Protocols: allow TCP:8080 2. Create an ingress firewall rule with the following settings: ג€¢ Targets: all instances with tier #3 service account ג€¢ Source filter: all instances with tier #2 service account ג€¢ Protocols: allow TCP: 8080",
+        "text": "1. Create an ingress firewall rule with the following settings: ג€¢ Targets: all instances with tier #2 service account ג€¢ Source filter: all instances with tier #1 service account ג€¢ Protocols: allow TCP:8080 |br|2. Create an ingress firewall rule with the following settings: ג€¢ Targets: all instances with tier #3 service account ג€¢ Source filter: all instances with tier #2 service account ג€¢ Protocols: allow TCP: 8080",
         "isCorrect": true
       },
       {
-        "text": "1. Create an ingress firewall rule with the following settings: ג€¢ Targets: all instances with tier #2 service account ג€¢ Source filter: all instances with tier #1 service account ג€¢ Protocols: allow all 2. Create an ingress firewall rule with the following settings: ג€¢ Targets: all instances with tier #3 service account ג€¢ Source filter: all instances with tier #2 service account ג€¢ Protocols: allow all",
+        "text": "1. Create an ingress firewall rule with the following settings: ג€¢ Targets: all instances with tier #2 service account ג€¢ Source filter: all instances with tier #1 service account ג€¢ Protocols: allow all |br|2. Create an ingress firewall rule with the following settings: ג€¢ Targets: all instances with tier #3 service account ג€¢ Source filter: all instances with tier #2 service account ג€¢ Protocols: allow all",
         "isCorrect": false
       },
       {
-        "text": "1. Create an egress firewall rule with the following settings: ג€¢ Targets: all instances ג€¢ Source filter: IP ranges (with the range set to 10.0.2.0/24) ג€¢ Protocols: allow TCP: 8080 2. Create an egress firewall rule with the following settings: ג€¢ Targets: all instances ג€¢ Source filter: IP ranges (with the range set to 10.0.1.0/24) ג€¢ Protocols: allow TCP: 8080",
+        "text": "1. Create an egress firewall rule with the following settings: ג€¢ Targets: all instances ג€¢ Source filter: IP ranges (with the range set to 10.0.2.0/24) ג€¢ Protocols: allow TCP: 8080 |br|2. Create an egress firewall rule with the following settings: ג€¢ Targets: all instances ג€¢ Source filter: IP ranges (with the range set to 10.0.1.0/24) ג€¢ Protocols: allow TCP: 8080",
         "isCorrect": false
       },
       {
-        "text": "1. Create an ingress firewall rule with the following settings: ג€¢ Targets: all instances ג€¢ Source filter: IP ranges (with the range set to 10.0.2.0/24) ג€¢ Protocols: allow all 2. Create an ingress firewall rule with the following settings: ג€¢ Targets: all instances ג€¢ Source filter: IP ranges (with the range set to 10.0.1.0/24) ג€¢ Protocols: allow all",
+        "text": "1. Create an ingress firewall rule with the following settings: ג€¢ Targets: all instances ג€¢ Source filter: IP ranges (with the range set to 10.0.2.0/24) ג€¢ Protocols: allow all |br|2. Create an ingress firewall rule with the following settings: ג€¢ Targets: all instances ג€¢ Source filter: IP ranges (with the range set to 10.0.1.0/24) ג€¢ Protocols: allow all",
         "isCorrect": false
       }
     ]
@@ -1173,19 +1173,19 @@
     "question": "You are given a project with a single Virtual Private Cloud (VPC) and a single subnetwork in the us-central1 region. There is a Compute Engine instance hosting an application in this subnetwork. You need to deploy a new instance in the same project in the europe-west1 region. This new instance needs access to the application. You want to follow Google-recommended practices. What should you do?",
     "answers": [
       {
-        "text": "1. Create a subnetwork in the same VPC, in europe-west1. 2. Create the new instance in the new subnetwork and use the first instance's private address as the endpoint.",
+        "text": "1. Create a subnetwork in the same VPC, in europe-west1. |br|2. Create the new instance in the new subnetwork and use the first instance's private address as the endpoint.",
         "isCorrect": true
       },
       {
-        "text": "1. Create a VPC and a subnetwork in europe-west1. 2. Expose the application with an internal load balancer. 3. Create the new instance in the new subnetwork and use the load balancer's address as the endpoint.",
+        "text": "1. Create a VPC and a subnetwork in europe-west1. |br|2. Expose the application with an internal load balancer. |br|3. Create the new instance in the new subnetwork and use the load balancer's address as the endpoint.",
         "isCorrect": false
       },
       {
-        "text": "1. Create a subnetwork in the same VPC, in europe-west1. 2. Use Cloud VPN to connect the two subnetworks. 3. Create the new instance in the new subnetwork and use the first instance's private address as the endpoint.",
+        "text": "1. Create a subnetwork in the same VPC, in europe-west1. |br|2. Use Cloud VPN to connect the two subnetworks. |br|3. Create the new instance in the new subnetwork and use the first instance's private address as the endpoint.",
         "isCorrect": false
       },
       {
-        "text": "1. Create a VPC and a subnetwork in europe-west1. 2. Peer the 2 VPCs. 3. Create the new instance in the new subnetwork and use the first instance's private address as the endpoint.",
+        "text": "1. Create a VPC and a subnetwork in europe-west1. |br|2. Peer the 2 VPCs. |br|3. Create the new instance in the new subnetwork and use the first instance's private address as the endpoint.",
         "isCorrect": false
       }
     ]
@@ -1203,11 +1203,11 @@
         "isCorrect": false
       },
       {
-        "text": "1. Go to the GKE console, and delete existing clusters. 2. Recreate a new cluster. 3. Clear the option to enable legacy Stackdriver Logging.",
+        "text": "1. Go to the GKE console, and delete existing clusters. |br|2. Recreate a new cluster. |br|3. Clear the option to enable legacy Stackdriver Logging.",
         "isCorrect": false
       },
       {
-        "text": "1. Go to the GKE console, and delete existing clusters. 2. Recreate a new cluster. 3. Clear the option to enable legacy Stackdriver Monitoring.",
+        "text": "1. Go to the GKE console, and delete existing clusters. |br|2. Recreate a new cluster. |br|3. Clear the option to enable legacy Stackdriver Monitoring.",
         "isCorrect": false
       }
     ]
@@ -1305,19 +1305,19 @@
     "question": "You have an application running in Google Kubernetes Engine (GKE) with cluster auto scaling enabled. The application exposes a TCP endpoint. There are several replicas of this application. You have a Compute Engine instance in the same region, but in another Virtual Private Cloud (VPC), called gce-network, that has no overlapping IP ranges with the first VPC. This instance needs to connect to the application on GKE. You want to minimize effort. What should you do?",
     "answers": [
       {
-        "text": "1. In GKE, create a Service of type LoadBalancer that uses the application's Pods as backend. 2. Add an annotation to this service: cloud.google.com/load-balancer-type: Internal 3. Peer the two VPCs together. 4. Configure the Compute Engine instance to use the address of the load balancer that has been created.",
+        "text": "1. In GKE, create a Service of type LoadBalancer that uses the application's Pods as backend. |br|2. Add an annotation to this service: cloud.google.com/load-balancer-type: Internal |br|3. Peer the two VPCs together. |br|4. Configure the Compute Engine instance to use the address of the load balancer that has been created.",
         "isCorrect": true
       },
       {
-        "text": "1. In GKE, create a Service of type LoadBalancer that uses the application's Pods as backend. 2. Set the service's externalTrafficPolicy to Cluster. 3. Configure the Compute Engine instance to use the address of the load balancer that has been created.",
+        "text": "1. In GKE, create a Service of type LoadBalancer that uses the application's Pods as backend. |br|2. Set the service's externalTrafficPolicy to Cluster. |br|3. Configure the Compute Engine instance to use the address of the load balancer that has been created.",
         "isCorrect": false
       },
       {
-        "text": "1. In GKE, create a Service of type NodePort that uses the application's Pods as backend. 2. Create a Compute Engine instance called proxy with 2 network interfaces, one in each VPC. 3. Use iptables on this instance to forward traffic from gce-network to the GKE nodes. 4. Configure the Compute Engine instance to use the address of proxy in gce-network as endpoint.",
+        "text": "1. In GKE, create a Service of type NodePort that uses the application's Pods as backend. |br|2. Create a Compute Engine instance called proxy with 2 network interfaces, one in each VPC. |br|3. Use iptables on this instance to forward traffic from gce-network to the GKE nodes. |br|4. Configure the Compute Engine instance to use the address of proxy in gce-network as endpoint.",
         "isCorrect": false
       },
       {
-        "text": "1. In GKE, create a Service of type LoadBalancer that uses the application's Pods as backend. 2. Add a Cloud Armor Security Policy to the load balancer that whitelists the internal IPs of the MIG's instances. 3. Configure the Compute Engine instance to use the address of the load balancer that has been created.",
+        "text": "1. In GKE, create a Service of type LoadBalancer that uses the application's Pods as backend. |br|2. Add a Cloud Armor Security Policy to the load balancer that whitelists the internal IPs of the MIG's instances. |br|3. Configure the Compute Engine instance to use the address of the load balancer that has been created.",
         "isCorrect": false
       }
     ]
@@ -1371,19 +1371,19 @@
     "question": "You are hosting an application on bare-metal servers in your own data center. The application needs access to Cloud Storage. However, security policies prevent the servers hosting the application from having public IP addresses or access to the internet. You want to follow Google-recommended practices to provide the application with access to Cloud Storage. What should you do?",
     "answers": [
       {
-        "text": "1. Using Cloud VPN or Interconnect, create a tunnel to a VPC in Google Cloud. 2. Use Cloud Router to create a custom route advertisement for 199.36.153.4/30. Announce that network to your on-premises network through the VPN tunnel. 3. In your on-premises network, configure your DNS server to resolve *.googleapis.com as a CNAME to restricted.googleapis.com.",
+        "text": "1. Using Cloud VPN or Interconnect, create a tunnel to a VPC in Google Cloud. |br|2. Use Cloud Router to create a custom route advertisement for 199.36.153.4/30. Announce that network to your on-premises network through the VPN tunnel. |br|3. In your on-premises network, configure your DNS server to resolve *.googleapis.com as a CNAME to restricted.googleapis.com.",
         "isCorrect": true
       },
       {
-        "text": "1. Use nslookup to get the IP address for storage.googleapis.com. 2. Negotiate with the security team to be able to give a public IP address to the servers. 3. Only allow egress traffic from those servers to the IP addresses for storage.googleapis.com.",
+        "text": "1. Use nslookup to get the IP address for storage.googleapis.com. |br|2. Negotiate with the security team to be able to give a public IP address to the servers. |br|3. Only allow egress traffic from those servers to the IP addresses for storage.googleapis.com.",
         "isCorrect": false
       },
       {
-        "text": "1. Using Cloud VPN, create a VPN tunnel to a Virtual Private Cloud (VPC) in Google Cloud. 2. In this VPC, create a Compute Engine instance and install the Squid proxy server on this instance. 3. Configure your servers to use that instance as a proxy to access Cloud Storage.",
+        "text": "1. Using Cloud VPN, create a VPN tunnel to a Virtual Private Cloud (VPC) in Google Cloud. |br|2. In this VPC, create a Compute Engine instance and install the Squid proxy server on this instance. |br|3. Configure your servers to use that instance as a proxy to access Cloud Storage.",
         "isCorrect": false
       },
       {
-        "text": "1. Use Migrate for Compute Engine (formerly known as Velostrata) to migrate those servers to Compute Engine. 2. Create an internal load balancer (ILB) that uses storage.googleapis.com as backend. 3. Configure your new instances to use this ILB as proxy.",
+        "text": "1. Use Migrate for Compute Engine (formerly known as Velostrata) to migrate those servers to Compute Engine. |br|2. Create an internal load balancer (ILB) that uses storage.googleapis.com as backend. |br|3. Configure your new instances to use this ILB as proxy.",
         "isCorrect": false
       }
     ]
@@ -1393,19 +1393,19 @@
     "question": "You want to deploy an application on Cloud Run that processes messages from a Cloud Pub/Sub topic. You want to follow Google-recommended practices. What should you do?",
     "answers": [
       {
-        "text": "1. Create a service account. 2. Give the Cloud Run Invoker role to that service account for your Cloud Run application. 3. Create a Cloud Pub/Sub subscription that uses that service account and uses your Cloud Run application as the push endpoint.",
+        "text": "1. Create a service account. |br|2. Give the Cloud Run Invoker role to that service account for your Cloud Run application. |br|3. Create a Cloud Pub/Sub subscription that uses that service account and uses your Cloud Run application as the push endpoint.",
         "isCorrect": true
       },
       {
-        "text": "1. Create a Cloud Function that uses a Cloud Pub/Sub trigger on that topic. 2. Call your application on Cloud Run from the Cloud Function for every message.",
+        "text": "1. Create a Cloud Function that uses a Cloud Pub/Sub trigger on that topic. |br|2. Call your application on Cloud Run from the Cloud Function for every message.",
         "isCorrect": false
       },
       {
-        "text": "1. Grant the Pub/Sub Subscriber role to the service account used by Cloud Run. 2. Create a Cloud Pub/Sub subscription for that topic. 3. Make your application pull messages from that subscription.",
+        "text": "1. Grant the Pub/Sub Subscriber role to the service account used by Cloud Run. |br|2. Create a Cloud Pub/Sub subscription for that topic. |br|3. Make your application pull messages from that subscription.",
         "isCorrect": false
       },
       {
-        "text": "1. Deploy your application on Cloud Run on GKE with the connectivity set to Internal. 2. Create a Cloud Pub/Sub subscription for that topic. 3. In the same Google Kubernetes Engine cluster as your application, deploy a container that takes the messages and sends them to your application.",
+        "text": "1. Deploy your application on Cloud Run on GKE with the connectivity set to Internal. |br|2. Create a Cloud Pub/Sub subscription for that topic. |br|3. In the same Google Kubernetes Engine cluster as your application, deploy a container that takes the messages and sends them to your application.",
         "isCorrect": false
       }
     ]
@@ -1481,19 +1481,19 @@
     "question": "For analysis purposes, you need to send all the logs from all of your Compute Engine instances to a BigQuery dataset called platform-logs. You have already installed the Cloud Logging agent on all the instances. You want to minimize cost. What should you do?",
     "answers": [
       {
-        "text": "1. In Cloud Logging, create a filter to view only Compute Engine logs. 2. Click Create Export. 3. Choose BigQuery as Sink Service, and the platform-logs dataset as Sink Destination.",
+        "text": "1. In Cloud Logging, create a filter to view only Compute Engine logs. |br|2. Click Create Export. |br|3. Choose BigQuery as Sink Service, and the platform-logs dataset as Sink Destination.",
         "isCorrect": true
       },
       {
-        "text": "1. Give the BigQuery Data Editor role on the platform-logs dataset to the service accounts used by your instances. 2. Update your instances' metadata to add the following value: logs-destination: bq://platform-logs.",
+        "text": "1. Give the BigQuery Data Editor role on the platform-logs dataset to the service accounts used by your instances. |br|2. Update your instances' metadata to add the following value: logs-destination: bq://platform-logs.",
         "isCorrect": false
       },
       {
-        "text": "1. In Cloud Logging, create a logs export with a Cloud Pub/Sub topic called logs as a sink. 2. Create a Cloud Function that is triggered by messages in the logs topic. 3. Configure that Cloud Function to drop logs that are not from Compute Engine and to insert Compute Engine logs in the platform-logs dataset",
+        "text": "1. In Cloud Logging, create a logs export with a Cloud Pub/Sub topic called logs as a sink. |br|2. Create a Cloud Function that is triggered by messages in the logs topic. |br|3. Configure that Cloud Function to drop logs that are not from Compute Engine and to insert Compute Engine logs in the platform-logs dataset",
         "isCorrect": false
       },
       {
-        "text": "1. Create a Cloud Function that has the BigQuery User role on the platform-logs dataset. 2. Configure this Cloud Function to create a BigQuery Job that executes this query: INSERT INTO dataset.platform-logs (timestamp, log) SELECT timestamp, log FROM compute.logs WHERE timestamp > DATE_SUB(CURRENT_DATE(), INTERVAL 1 DAY) 3. Use Cloud Scheduler to trigger this Cloud Function once a day.",
+        "text": "1. Create a Cloud Function that has the BigQuery User role on the platform-logs dataset. |br|2. Configure this Cloud Function to create a BigQuery Job that executes this query: INSERT INTO dataset.platform-logs (timestamp, log) SELECT timestamp, log FROM compute.logs WHERE timestamp > DATE_SUB(CURRENT_DATE(), INTERVAL 1 DAY) |br|3. Use Cloud Scheduler to trigger this Cloud Function once a day.",
         "isCorrect": false
       }
     ]
@@ -2522,19 +2522,19 @@
     "question": "You need to reduce GCP service costs for a division of your company using the fewest possible steps. You need to turn off all configured services in an existing GCP project. What should you do?",
     "answers": [
       {
-        "text": "1. Verify that you are assigned the Project Owners IAM role for this project. 2. Locate the project in the GCP console, click Shut down and then enter the project ID.",
+        "text": "1. Verify that you are assigned the Project Owners IAM role for this project. |br|2. Locate the project in the GCP console, click Shut down and then enter the project ID.",
         "isCorrect": true
       },
       {
-        "text": "1. Verify that you are assigned the Project Owners IAM role for this project. 2. Switch to the project in the GCP console, locate the resources and delete them.",
+        "text": "1. Verify that you are assigned the Project Owners IAM role for this project. |br|2. Switch to the project in the GCP console, locate the resources and delete them.",
         "isCorrect": false
       },
       {
-        "text": "1. Verify that you are assigned the Organizational Administrator IAM role for this project. 2. Locate the project in the GCP console, enter the project ID and then click Shut down.",
+        "text": "1. Verify that you are assigned the Organizational Administrator IAM role for this project. |br|2. Locate the project in the GCP console, enter the project ID and then click Shut down.",
         "isCorrect": false
       },
       {
-        "text": "1. Verify that you are assigned the Organizational Administrators IAM role for this project. 2. Switch to the project in the GCP console, locate the resources and delete them.",
+        "text": "1. Verify that you are assigned the Organizational Administrators IAM role for this project. |br|2. Switch to the project in the GCP console, locate the resources and delete them.",
         "isCorrect": false
       }
     ]
@@ -2632,19 +2632,19 @@
     "question": "You need to manage multiple Google Cloud projects in the fewest steps possible. You want to configure the Google Cloud SDK command line interface (CLI) so that you can easily manage multiple projects. What should you do?",
     "answers": [
       {
-        "text": "1. Create a configuration for each project you need to manage. 2. Activate the appropriate configuration when you work with each of your assigned Google Cloud projects.",
+        "text": "1. Create a configuration for each project you need to manage. |br|2. Activate the appropriate configuration when you work with each of your assigned Google Cloud projects.",
         "isCorrect": true
       },
       {
-        "text": "1. Create a configuration for each project you need to manage. 2. Use gcloud init to update the configuration values when you need to work with a non-default project",
+        "text": "1. Create a configuration for each project you need to manage. |br|2. Use gcloud init to update the configuration values when you need to work with a non-default project",
         "isCorrect": false
       },
       {
-        "text": "1. Use the default configuration for one project you need to manage. 2. Activate the appropriate configuration when you work with each of your assigned Google Cloud projects.",
+        "text": "1. Use the default configuration for one project you need to manage. |br|2. Activate the appropriate configuration when you work with each of your assigned Google Cloud projects.",
         "isCorrect": false
       },
       {
-        "text": "1. Use the default configuration for one project you need to manage. 2. Use gcloud init to update the configuration values when you need to work with a non-default project.",
+        "text": "1. Use the default configuration for one project you need to manage. |br|2. Use gcloud init to update the configuration values when you need to work with a non-default project.",
         "isCorrect": false
       }
     ]
@@ -2676,19 +2676,19 @@
     "question": "Your company is moving from an on-premises environment to Google Cloud. You have multiple development teams that use Cassandra environments as backend databases. They all need a development environment that is isolated from other Cassandra instances. You want to move to Google Cloud quickly and with minimal support effort. What should you do?",
     "answers": [
       {
-        "text": "1. Advise your developers to go to Cloud Marketplace. 2. Ask the developers to launch a Cassandra image for their development work.",
+        "text": "1. Advise your developers to go to Cloud Marketplace. |br|2. Ask the developers to launch a Cassandra image for their development work.",
         "isCorrect": true
       },
       {
-        "text": "1. Build an instruction guide to install Cassandra on Google Cloud. 2. Make the instruction guide accessible to your developers.",
+        "text": "1. Build an instruction guide to install Cassandra on Google Cloud. |br|2. Make the instruction guide accessible to your developers.",
         "isCorrect": false
       },
       {
-        "text": "1. Build a Cassandra Compute Engine instance and take a snapshot of it. 2. Use the snapshot to create instances for your developers.",
+        "text": "1. Build a Cassandra Compute Engine instance and take a snapshot of it. |br|2. Use the snapshot to create instances for your developers.",
         "isCorrect": false
       },
       {
-        "text": "1. Build a Cassandra Compute Engine instance and take a snapshot of it. 2. Upload the snapshot to Cloud Storage and make it accessible to your developers. 3. Build instructions to create a Compute Engine instance from the snapshot so that developers can do it themselves.",
+        "text": "1. Build a Cassandra Compute Engine instance and take a snapshot of it. |br|2. Upload the snapshot to Cloud Storage and make it accessible to your developers. |br|3. Build instructions to create a Compute Engine instance from the snapshot so that developers can do it themselves.",
         "isCorrect": false
       }
     ]
@@ -2698,19 +2698,19 @@
     "question": "You have a Compute Engine instance hosting a production application. You want to receive an email if the instance consumes more than 90% of its CPU resources for more than 15 minutes. You want to use Google services. What should you do?",
     "answers": [
       {
-        "text": "1. Create a Stackdriver Workspace, and associate your Google Cloud Platform (GCP) project with it. 2. Create an Alerting Policy in Stackdriver that uses the threshold as a trigger condition. 3. Configure your email address in the notification channel.",
+        "text": "1. Create a Stackdriver Workspace, and associate your Google Cloud Platform (GCP) project with it. |br|2. Create an Alerting Policy in Stackdriver that uses the threshold as a trigger condition. |br|3. Configure your email address in the notification channel.",
         "isCorrect": true
       },
       {
-        "text": "1. Create a consumer Gmail account. 2. Write a script that monitors the CPU usage. 3. When the CPU usage exceeds the threshold, have that script send an email using the Gmail account and smtp.gmail.com on port 25 as SMTP server.",
+        "text": "1. Create a consumer Gmail account. |br|2. Write a script that monitors the CPU usage. |br|3. When the CPU usage exceeds the threshold, have that script send an email using the Gmail account and smtp.gmail.com on port 25 as SMTP server.",
         "isCorrect": false
       },
       {
-        "text": "1. Create a Stackdriver Workspace, and associate your GCP project with it. 2. Write a script that monitors the CPU usage and sends it as a custom metric to Stackdriver. 3. Create an uptime check for the instance in Stackdriver.",
+        "text": "1. Create a Stackdriver Workspace, and associate your GCP project with it. |br|2. Write a script that monitors the CPU usage and sends it as a custom metric to Stackdriver. |br|3. Create an uptime check for the instance in Stackdriver.",
         "isCorrect": false
       },
       {
-        "text": "1. In Stackdriver Logging, create a logs-based metric to extract the CPU usage by using this regular expression: CPU Usage: ([0-9] {1,3})% 2. In Stackdriver Monitoring, create an Alerting Policy based on this metric. 3. Configure your email address in the notification channel.",
+        "text": "1. In Stackdriver Logging, create a logs-based metric to extract the CPU usage by using this regular expression: CPU Usage: ([0-9] {1,3})% |br|2. In Stackdriver Monitoring, create an Alerting Policy based on this metric. |br|3. Configure your email address in the notification channel.",
         "isCorrect": false
       }
     ]
@@ -3160,19 +3160,19 @@
     "question": "You have a Compute Engine instance hosting an application used between 9 AM and 6 PM on weekdays. You want to back up this instance daily for disaster recovery purposes. You want to keep the backups for 30 days. You want the Google-recommended solution with the least management overhead and the least number of services. What should you do?",
     "answers": [
       {
-        "text": "1. In the Cloud Console, go to the Compute Engine Disks page and select your instance's disk. 2. In the Snapshot Schedule section, select Create Schedule and configure the following parameters: - Schedule frequency: Daily - Start time: 1:00 AM ג€\" 2:00 AM - Autodelete snapshots after: 30 days",
+        "text": "1. In the Cloud Console, go to the Compute Engine Disks page and select your instance's disk. |br|2. In the Snapshot Schedule section, select Create Schedule and configure the following parameters: - Schedule frequency: Daily - Start time: 1:00 AM ג€\" 2:00 AM - Autodelete snapshots after: 30 days",
         "isCorrect": true
       },
       {
-        "text": "1. Update your instances' metadata to add the following value: snapshotג€\"schedule: 0 1 * * * 2. Update your instances' metadata to add the following value: snapshotג€\"retention: 30",
+        "text": "1. Update your instances' metadata to add the following value: snapshotג€\"schedule: 0 1 * * * |br|2. Update your instances' metadata to add the following value: snapshotג€\"retention: 30",
         "isCorrect": false
       },
       {
-        "text": "1. Create a Cloud Function that creates a snapshot of your instance's disk. 2. Create a Cloud Function that deletes snapshots that are older than 30 days. 3. Use Cloud Scheduler to trigger both Cloud Functions daily at 1:00 AM.",
+        "text": "1. Create a Cloud Function that creates a snapshot of your instance's disk. |br|2. Create a Cloud Function that deletes snapshots that are older than 30 days. |br|3. Use Cloud Scheduler to trigger both Cloud Functions daily at 1:00 AM.",
         "isCorrect": false
       },
       {
-        "text": "1. Create a bash script in the instance that copies the content of the disk to Cloud Storage. 2. Create a bash script in the instance that deletes data older than 30 days in the backup Cloud Storage bucket. 3. Configure the instance's crontab to execute these scripts daily at 1:00 AM.",
+        "text": "1. Create a bash script in the instance that copies the content of the disk to Cloud Storage. |br|2. Create a bash script in the instance that deletes data older than 30 days in the backup Cloud Storage bucket. |br|3. Configure the instance's crontab to execute these scripts daily at 1:00 AM.",
         "isCorrect": false
       }
     ]
@@ -3934,19 +3934,19 @@
     "question": "Your company is moving its entire workload to Compute Engine. Some servers should be accessible through the Internet, and other servers should only be accessible over the internal network. All servers need to be able to talk to each other over specific ports and protocols. The current on-premises network relies on a demilitarized zone (DMZ) for the public servers and a Local Area Network (LAN) for the private servers. You need to design the networking infrastructure on Google Cloud to match these requirements. What should you do?",
     "answers": [
       {
-        "text": "1. Create a single VPC with a subnet for the DMZ and a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public ingress traffic for the DMZ.",
+        "text": "1. Create a single VPC with a subnet for the DMZ and a subnet for the LAN. |br|2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public ingress traffic for the DMZ.",
         "isCorrect": true
       },
       {
-        "text": "1. Create a single VPC with a subnet for the DMZ and a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public egress traffic for the DMZ.",
+        "text": "1. Create a single VPC with a subnet for the DMZ and a subnet for the LAN. |br|2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public egress traffic for the DMZ.",
         "isCorrect": false
       },
       {
-        "text": "1. Create a VPC with a subnet for the DMZ and another VPC with a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public ingress traffic for the DMZ.",
+        "text": "1. Create a VPC with a subnet for the DMZ and another VPC with a subnet for the LAN. |br|2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public ingress traffic for the DMZ.",
         "isCorrect": false
       },
       {
-        "text": "1. Create a VPC with a subnet for the DMZ and another VPC with a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public egress traffic for the DMZ.",
+        "text": "1. Create a VPC with a subnet for the DMZ and another VPC with a subnet for the LAN. |br|2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public egress traffic for the DMZ.",
         "isCorrect": false
       }
     ]
@@ -4330,19 +4330,19 @@
     "question": "Your organization has three existing Google Cloud projects. You need to bill the Marketing department for only their Google Cloud services for a new initiative within their group. What should you do?",
     "answers": [
       {
-        "text": "1. Verify that you are assigned the Billing Administrator IAM role for your organization's Google Cloud Project for the Marketing department. 2. Link the new project to a Marketing Billing Account.",
+        "text": "1. Verify that you are assigned the Billing Administrator IAM role for your organization's Google Cloud Project for the Marketing department. |br|2. Link the new project to a Marketing Billing Account.",
         "isCorrect": true
       },
       {
-        "text": "1. Verify that you are assigned the Billing Administrator IAM role for your organization's Google Cloud account. 2. Create a new Google Cloud Project for the Marketing department. 3. Set the default key-value project labels to department:marketing for all services in this project.",
+        "text": "1. Verify that you are assigned the Billing Administrator IAM role for your organization's Google Cloud account. |br|2. Create a new Google Cloud Project for the Marketing department. |br|3. Set the default key-value project labels to department:marketing for all services in this project.",
         "isCorrect": false
       },
       {
-        "text": "1. Verify that you are assigned the Organization Administrator IAM role for your organization's Google Cloud account. 2. Create a new Google Cloud Project for the Marketing department. 3. Link the new project to a Marketing Billing Account.",
+        "text": "1. Verify that you are assigned the Organization Administrator IAM role for your organization's Google Cloud account. |br|2. Create a new Google Cloud Project for the Marketing department. |br|3. Link the new project to a Marketing Billing Account.",
         "isCorrect": false
       },
       {
-        "text": "1. Verify that you are assigned the Organization Administrator IAM role for your organization's Google Cloud account. 2. Create a new Google Cloud Project for the Marketing department. 3. Set the default key-value project labels to department:marketing for all services in this project.",
+        "text": "1. Verify that you are assigned the Organization Administrator IAM role for your organization's Google Cloud account. |br|2. Create a new Google Cloud Project for the Marketing department. |br|3. Set the default key-value project labels to department:marketing for all services in this project.",
         "isCorrect": false
       }
     ]
@@ -4726,19 +4726,19 @@
     "question": "Your company requires all developers to have the same permissions, regardless of the Google Cloud project they are working on. Your company’s security policy also restricts developer permissions to Compute Engine, Cloud Functions, and Cloud SQL. You want to implement the security policy with minimal effort. What should you do?",
     "answers": [
       {
-        "text": "• Create a custom role with Compute Engine, Cloud Functions, and Cloud SQL permissions in one project within the Google Cloud organization.• Copy the role across all projects created within the organization with the gcloud iam roles copy command.• Assign the role to developers in those projects.",
+        "text": "• Create a custom role with Compute Engine, Cloud Functions, and Cloud SQL permissions in one project within the Google Cloud organization.|br|• Copy the role across all projects created within the organization with the gcloud iam roles copy command.|br|• Assign the role to developers in those projects.",
         "isCorrect": false
       },
       {
-        "text": "• Add all developers to a Google group in Google Groups for Workspace.• Assign the predefined role of Compute Admin to the Google group at the Google Cloud organization level.",
+        "text": "• Add all developers to a Google group in Google Groups for Workspace.|br|• Assign the predefined role of Compute Admin to the Google group at the Google Cloud organization level.",
         "isCorrect": false
       },
       {
-        "text": "• Add all developers to a Google group in Cloud Identity.• Assign predefined roles for Compute Engine, Cloud Functions, and Cloud SQL permissions to the Google group for each project in the Google Cloud organization.",
+        "text": "• Add all developers to a Google group in Cloud Identity.|br|• Assign predefined roles for Compute Engine, Cloud Functions, and Cloud SQL permissions to the Google group for each project in the Google Cloud organization.",
         "isCorrect": false
       },
       {
-        "text": "• Add all developers to a Google group in Cloud Identity.• Create a custom role with Compute Engine, Cloud Functions, and Cloud SQL permissions at the Google Cloud organization level.• Assign the custom role to the Google group.",
+        "text": "• Add all developers to a Google group in Cloud Identity.|br|• Create a custom role with Compute Engine, Cloud Functions, and Cloud SQL permissions at the Google Cloud organization level.|br|• Assign the custom role to the Google group.",
         "isCorrect": true
       }
     ]
@@ -5229,7 +5229,7 @@
   },
   {
     "id": 238,
-    "question": "Your company wants to migrate their on-premises workloads to Google Cloud. The current on-premises workloads consist of: |br| • A Flask web application|br|• A backend API|br|• A scheduled long-running background job for ETL and reporting |br|You need to keep operational costs low. You want to follow Google-recommended practices to migrate these workloads to serverless solutions on Google Cloud. What should you do?",
+    "question": "Your company wants to migrate their on-premises workloads to Google Cloud. The current on-premises workloads consist of: |br|• A Flask web application|br|• A backend API|br|• A scheduled long-running background job for ETL and reporting |br|You need to keep operational costs low. You want to follow Google-recommended practices to migrate these workloads to serverless solutions on Google Cloud. What should you do?",
     "answers": [
       {
         "text": "Migrate the web application to App Engine and the backend API to Cloud Run. Use Cloud Tasks to run your background job on Cloud Run.",
