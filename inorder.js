@@ -14,7 +14,7 @@ fetch('./data.json')
     .catch(error => console.error('Error fetching data:', error));
 
 function createQuestionContainers(questions) {
-    shuffleArray(questions);
+    // shuffleArray(questions);
 
     for (let i = 0; i < questions.length; i++) {
         const questionContainer = document.createElement('div');
