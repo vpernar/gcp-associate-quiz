@@ -76,6 +76,7 @@ function displayQuestion(question, questionNumber, container) {
 
     if (question.image) {
         const image = document.createElement('img');
+        image.classList.add("img");
         image.src = question.image;
         questionDiv.appendChild(image);
     }
